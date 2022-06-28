@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import WorkExperience from "./components/WorkExperience.vue";
 import TheWelcome from "./components/TheWelcome.vue";
 </script>
 
@@ -31,7 +31,10 @@ import TheWelcome from "./components/TheWelcome.vue";
 
     <main class="container">
       <div class="main-wrapper">
-        <article></article>
+        <article>
+          <h3>Experiences</h3>
+          <WorkExperience />
+        </article>
         <aside></aside>
       </div>
     </main>
