@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import WorkExperience from "./components/WorkExperience.vue";
 import TheWelcome from "./components/TheWelcome.vue";
+
+const workExperiences: WorkExperienceModel[] = [{icon: '', title: 'Frontend Chapter Lead', company: 'Tapsell', start: {month: '1', year: '2000'}, desc: 'lorem'}];
 </script>
 
 <template>
@@ -24,6 +26,10 @@ import TheWelcome from "./components/TheWelcome.vue";
             >StackOverFlow</a
           >
           <a href="mailto:vahidm1467@gmail.com">vahidm1467@gmail.com</a>
+          <a href="https://vmoh.medium.com/">Medium articles</a>
+          <a href="https://github.com/vmohir">Github</a>
+          <a href="https://slides.vahid-mohammadi.ir/">Talks</a>
+          <a href="https://dribbble.com/vmoh_ir">Dribbble Designs</a>
           <a href="tel:+989210329938">+989210329938</a>
         </div>
       </div>
@@ -33,7 +39,7 @@ import TheWelcome from "./components/TheWelcome.vue";
       <div class="main-wrapper">
         <article>
           <h3>Experiences</h3>
-          <WorkExperience />
+          <WorkExperience v-for="w in workExperiences" work="w" />
         </article>
         <aside></aside>
       </div>
