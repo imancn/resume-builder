@@ -8,6 +8,6 @@ export interface WorkExperienceModel {
 }
 
 export interface YearMonth {
-	month: string;
-	year: string
+  month: string;
+  year: string;
 }
