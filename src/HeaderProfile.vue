@@ -21,6 +21,9 @@ import IconDribbble from '@/components/icons/IconDribbble.vue';
       <a href="tel:+989210329938">
         <span class="material-symbols-outlined">call</span><span>+989210329938</span>
       </a>
+      <a href="https://vahid-mohammadi.ir">
+        <span class="material-symbols-outlined">language</span>
+      </a>
       <a href="https://www.linkedin.com/in/vahidmohammadi/" aria-label="LinkedIn">
         <span><IconLinkedin /></span>
       </a>

@@ -43,9 +43,13 @@ const otherSkills: string[] = [
       <a v-if="s.badge" :class="'badge badge-' + s.badge" :href="s.badgeLink" target="_blank">{{
         s.badge
       }}</a>
-      <div v-if="s.topPercentileInStackoverflow" class="top-percentile">
+      <div
+        v-if="s.topPercentileInStackoverflow"
+        class="top-percentile"
+        :title="`Top ${s.topPercentileInStackoverflow}% in StackOverFlow`"
+      >
         Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span> in
-        <span class="stackoverflow-icon"><IconStackoverflow /></span>
+        <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
       </div>
       <div class="skill-years">{{ s.years }}+ Years</div>
     </li>

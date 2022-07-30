@@ -13,5 +13,8 @@ import Resume from '@/Resume.vue';
   display: flex;
   padding: 1rem;
   background: #f9f9f9;
+  @media print {
+    padding: 0;
+  }
 }
 </style>

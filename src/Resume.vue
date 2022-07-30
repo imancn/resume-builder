@@ -3,6 +3,7 @@ import HeaderProfile from '@/HeaderProfile.vue';
 import WorkExperiences from '@/WorkExperiences.vue';
 import Education from '@/Education.vue';
 import SkillsList from '@/SkillsList.vue';
+import HonorsList from '@/HonorsList.vue';
 </script>
 
 <template>
@@ -15,7 +16,10 @@ import SkillsList from '@/SkillsList.vue';
           <WorkExperiences />
           <Education />
         </article>
-        <aside class="aside"><SkillsList /></aside>
+        <aside class="aside">
+          <SkillsList />
+          <HonorsList />
+        </aside>
       </div>
     </main>
   </div>
@@ -32,6 +36,11 @@ import SkillsList from '@/SkillsList.vue';
   box-shadow: 0px 3.8px 5.3px rgba(0, 0, 0, 0.028), 0px 12.7px 17.9px rgba(0, 0, 0, 0.042),
     0px 57px 80px rgba(0, 0, 0, 0.07);
   padding: 1.5rem;
+  @media print {
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
 }
 
 .main-wrapper {
