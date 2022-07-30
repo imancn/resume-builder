@@ -53,6 +53,6 @@ import HonorsList from '@/HonorsList.vue';
 }
 
 .aside {
-  flex: 0 0 350px;
+  flex: 0 0 320px;
 }
 </style>
