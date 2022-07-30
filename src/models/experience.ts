@@ -5,6 +5,8 @@ export interface WorkExperienceModel {
   start: YearMonth;
   end?: YearMonth;
   desc: string;
+  country: string;
+  type: 'contract' | 'full time' | 'freelance';
 }
 
 export interface YearMonth {

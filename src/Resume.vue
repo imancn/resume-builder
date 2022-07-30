@@ -2,6 +2,7 @@
 import HeaderProfile from '@/HeaderProfile.vue';
 import WorkExperiences from '@/WorkExperiences.vue';
 import Education from '@/Education.vue';
+import SkillsList from '@/SkillsList.vue';
 </script>
 
 <template>
@@ -14,7 +15,7 @@ import Education from '@/Education.vue';
           <WorkExperiences />
           <Education />
         </article>
-        <aside class="aside"></aside>
+        <aside class="aside"><SkillsList /></aside>
       </div>
     </main>
   </div>
@@ -30,11 +31,12 @@ import Education from '@/Education.vue';
   border-radius: 4px;
   box-shadow: 0px 3.8px 5.3px rgba(0, 0, 0, 0.028), 0px 12.7px 17.9px rgba(0, 0, 0, 0.042),
     0px 57px 80px rgba(0, 0, 0, 0.07);
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .main-wrapper {
   display: flex;
+  gap: 1.5rem;
 }
 
 .content {
@@ -43,17 +45,5 @@ import Education from '@/Education.vue';
 
 .aside {
   flex: 0 0 350px;
-}
-
-a {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
 }
 </style>
