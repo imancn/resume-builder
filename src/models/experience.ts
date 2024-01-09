@@ -1,12 +1,16 @@
 export interface WorkExperienceModel {
   icon: string;
-  title: string;
   company: string;
+  country: string;
+  type: 'contract' | 'full time' | 'freelance';
+  positions: WorkPositionModel[];
+}
+
+export interface WorkPositionModel {
+  title: string;
   start: YearMonth;
   end?: YearMonth;
   desc: string;
-  country: string;
-  type: 'contract' | 'full time' | 'freelance';
 }
 
 export interface YearMonth {

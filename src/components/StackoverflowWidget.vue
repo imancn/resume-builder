@@ -9,17 +9,16 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
     </div>
     <div class="reputation"><span class="rep-number">5k+</span> <span>Reputation</span></div>
     <div class="badge">Angular bronze badge</div>
-    <div class="year">Top 3% in 2022</div>
     <div class="tags">
+      <span>Top</span>
       <div class="percent-wrapper">
         <div class="percent">5%</div>
-        <div class="tag-names"><span>Angular</span><span>VSCode</span></div>
+        <div class="tag-names"><span>Angular</span><span>TypeScript</span></div>
       </div>
       <div class="percent-wrapper">
         <div class="percent">10%</div>
         <div class="tag-names">
-          <span>HTML</span><span>CSS</span><span>TypeScript</span><span>JavaScript</span
-          ><span>Git</span><span>NPM</span>
+          <span>HTML</span><span>CSS</span><span>NPM</span><span>JavaScript</span><span>Git</span>
         </div>
       </div>
     </div>
@@ -66,6 +65,7 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
   display: flex;
   align-items: center;
   margin-top: 0.5rem;
+  grid-gap: 0.5rem;
   .percent-wrapper {
     display: flex;
     align-items: center;
