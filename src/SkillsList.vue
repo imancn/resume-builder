@@ -4,8 +4,8 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 
 const skills: Skill[] = [
   { name: 'HTML CSS', years: 9, topPercentileInStackoverflow: 10 },
-  { name: 'JavaScript', years: 6, topPercentileInStackoverflow: 20 },
-  { name: 'TypeScript', years: 5, topPercentileInStackoverflow: 10 },
+  { name: 'JavaScript', years: 6, topPercentileInStackoverflow: 10 },
+  { name: 'TypeScript', years: 5, topPercentileInStackoverflow: 5 },
   {
     name: 'Angular',
     years: 5,
