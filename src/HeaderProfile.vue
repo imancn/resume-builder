@@ -18,8 +18,8 @@ import IconDribbble from '@/components/icons/IconDribbble.vue';
       <a href="mailto:vahidm1467@gmail.com">
         <span class="material-symbols-outlined">mail</span><span>vahidm1467@gmail.com</span>
       </a>
-      <a href="tel:+989210329938">
-        <span class="material-symbols-outlined">call</span><span>+989210329938</span>
+      <a href="tel:+447495192782">
+        <span class="material-symbols-outlined">call</span><span>+447495192782</span>
       </a>
       <a href="https://vahid-mohammadi.ir">
         <span class="material-symbols-outlined">language</span>
@@ -33,7 +33,7 @@ import IconDribbble from '@/components/icons/IconDribbble.vue';
       <a href="https://vmoh.medium.com/" aria-label="Medium articles">
         <span><IconMedium /></span>
       </a>
-      <a href="https://github.com/vmohir" aria-label="Github">
+      <a href="https://github.com/vmohir" aria-label="GitHub">
         <span><IconGithub /></span>
       </a>
       <a href="https://slides.vahid-mohammadi.ir/" aria-label="Talks">
