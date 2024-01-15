@@ -29,10 +29,18 @@ function getDateRangeLengthBetweenPositions(
 
   const years: number = endYear ? endYear - startYear : nowDate.getFullYear() - startYear;
   const months = endMonth ? endMonth - startMonth : nowDate.getMonth() + 1 - startMonth;
+  const totalMonths = years * 12 + months;
 
-  return years === 0
-    ? `${months} Months`
-    : `${years}${months >= 6 ? '.5+' : months > 0 ? '+' : ''} Years`;
+  // return years === 0
+  //   ? `${months} Months`
+  //   : `${years}${months >= 6 ? '.5+' : months > 0 ? '+' : ''} Years`;
+  return totalMonths <= 1
+    ? '1 month'
+    : totalMonths < 12
+    ? `${totalMonths} months`
+    : totalMonths % 12 === 0
+    ? `${totalMonths / 12}+ years`
+    : `${Math.floor(totalMonths / 12)}${totalMonths % 12 >= 6 ? '.5' : ''}+ years`;
 }
 function getMonthName(monthNumber: string) {
   const monthNames = [
