@@ -92,11 +92,11 @@ a {
   margin-bottom: 0.5rem;
   color: var(--text-3);
   position: relative;
-  padding-left: 14px;
+  padding-left: 17px;
   &:before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 3px;
     height: 20px;
     width: 8px;
     background: rgb(0 0 0 / 8%);

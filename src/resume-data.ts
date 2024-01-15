@@ -17,7 +17,6 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         start: { month: '11', year: '2022' },
         desc: `
     <p>When I joined Huma, the frontend team was remote and disconnected. I brought the team together, established coding standards, implemented code review processes, and automated workflows. We managed to refactor the project and proactively improved the code style making it more consistent.</p>
-<span>Some of my responsibilities:</span>
 <ul>
 <li>Lead a team of 15-20 Angular frontend developers</li>
 <li>Set up full CI/CD and tooling for code listing, integrated testing, QA, visual testing, and deployment using GitHub actions, ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic.</li>
@@ -38,12 +37,13 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         title: 'Director of Technical Operations',
         start: { month: '3', year: '2022' },
         end: { month: '9', year: '2022' },
-        desc: `<ul>
+        desc: `<p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
+<ul>
 <li>Facilitate technical operations and procedures like onboarding, knowledge sharing, code quality, etc.</li>
 <li>Assist tech teams in workflow, communication, and documentation.</li>
 <li>Increase developers' performance by studying and providing DevOps tools and enhancing their experience.</li>
 <li>Directly work with the VP of Engineering to help manage engineering teams and provide solutions for processes.</li>
-<li>Develop CLI tools with Node.js and implement CI/CD pipelines.</li>
+<li>Develop CLI tools and chat bots with Node.js and implement CI/CD pipelines.</li>
 </ul>`,
       },
       {
@@ -51,7 +51,6 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         start: { month: '7', year: '2019' },
         end: { month: '3', year: '2022' },
         desc: `<p>I joined Tapsell as a junior front-end developer and as the company was growing I managed to gain trust and create a front-end chapter (we were only 2 front-end developers at the time) later by growing my team I had a huge impact on the quality of work in front-end teams of Tapsell.</p>
-<span>My main responsibilities:</span>
 <ul>
 <li>Lead a team of 15+ frontend developers in multiple products</li>
 <li>Do interviews for future candidates</li>
@@ -83,6 +82,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <li>Maintain and develop a React panel with a custom UI Kit</li>
 <li>Develop multiple ad widget projects using Webpack + Svelte</li>
 <li>Develop WordPress blogs and landing pages using React + Gatsby</li>
+<li>Set up full CI/CD and tooling for code listing and deployment using GitLab CI, ESLint, and Stylelint.</li>
 </ul>`,
       },
     ],
