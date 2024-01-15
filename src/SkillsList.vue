@@ -17,8 +17,8 @@ const skills: Skill[] = [
   { name: 'Webpack', years: 3 },
 ];
 const otherSkills: string[] = [
-  'Svelte',
   'SCSS',
+  'Svelte',
   'Gatsby',
   'NodeJS',
   'GraphQL',

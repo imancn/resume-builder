@@ -4,6 +4,48 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 import IconGithub from '@/components/icons/IconGithub.vue';
 import IconMedium from '@/components/icons/IconMedium.vue';
 import IconDribbble from '@/components/icons/IconDribbble.vue';
+
+interface SocialMedia {
+  link: string;
+  icon?: string;
+  iconComponent?: any;
+  ariaLabel?: string;
+  class?: string;
+}
+
+const socialMedia: SocialMedia[] = [
+  { link: 'https://vahid-mohammadi.ir', icon: 'language', class: 'contacts-contact-info' },
+  {
+    link: 'https://www.linkedin.com/in/vahidmohammadi/',
+    iconComponent: IconLinkedin,
+    ariaLabel: 'LinkedIn',
+    class: 'contacts-social-media',
+  },
+  {
+    link: 'https://stackoverflow.com/users/1889607/vahid/',
+    iconComponent: IconStackoverflow,
+    ariaLabel: 'StackOverFlow',
+    class: 'contacts-social-media',
+  },
+  {
+    link: 'https://vmoh.medium.com/',
+    iconComponent: IconMedium,
+    ariaLabel: 'Medium articles',
+    class: 'contacts-social-media',
+  },
+  {
+    link: 'https://github.com/vmohir',
+    iconComponent: IconGithub,
+    ariaLabel: 'GitHub',
+    class: 'contacts-social-media',
+  },
+  {
+    link: 'https://dribbble.com/vmoh_ir',
+    iconComponent: IconDribbble,
+    ariaLabel: 'Dribbble Designs',
+    class: 'contacts-social-media',
+  },
+];
 </script>
 
 <template>
@@ -14,38 +56,21 @@ import IconDribbble from '@/components/icons/IconDribbble.vue';
 
     <h1 class="resume-name">Vahid Mohammadi</h1>
 
-    <div class="contacts">
-      <a href="mailto:vahidm1467@gmail.com">
+    <div class="contact-info">
+      <a href="mailto:vahidm1467@gmail.com" class="contacts-contact-info">
         <span class="material-symbols-outlined">mail</span><span>vahidm1467@gmail.com</span>
       </a>
-      <a href="tel:+447495192782">
+      <a href="tel:+447495192782" class="contacts-contact-info">
         <span class="material-symbols-outlined">call</span><span>+447495192782</span>
       </a>
-      <a href="https://vahid-mohammadi.ir">
-        <span class="material-symbols-outlined">language</span>
-      </a>
-      <a href="https://www.linkedin.com/in/vahidmohammadi/" aria-label="LinkedIn">
-        <span><IconLinkedin /></span>
-      </a>
-      <a href="https://stackoverflow.com/users/1889607/vahid/" aria-label="StackOverFlow">
-        <span><IconStackoverflow /></span>
-      </a>
-      <a href="https://vmoh.medium.com/" aria-label="Medium articles">
-        <span><IconMedium /></span>
-      </a>
-      <a href="https://github.com/vmohir" aria-label="GitHub">
-        <span><IconGithub /></span>
-      </a>
-      <a href="https://slides.vahid-mohammadi.ir/" aria-label="Talks">
-        <span
-          class="material-symbols-outlined"
-          style="font-variation-settings: 'FILL' 0, 'wght' 900, 'GRAD' 0, 'opsz' 48"
-        >
-          slideshow
-        </span>
-      </a>
-      <a href="https://dribbble.com/vmoh_ir" aria-label="Dribbble Designs">
-        <span><IconDribbble /></span>
+    </div>
+    <!--    <div class="contacts">-->
+
+    <!--    </div>-->
+    <div class="social-media">
+      <a v-for="s of socialMedia" :key="s.link" :href="s.link" :class="s.class">
+        <span v-if="s.icon" class="material-symbols-outlined">{{ s.icon }}</span>
+        <span v-else><component v-bind:is="s.iconComponent"></component></span>
       </a>
     </div>
 
@@ -60,12 +85,39 @@ import IconDribbble from '@/components/icons/IconDribbble.vue';
 </template>
 
 <style scoped lang="scss">
+$size-lg: 1024px;
+$size-md: 800px;
+$size-sm: 540px;
+$size-xs: 500px;
 header {
   display: grid;
-  grid-template-areas: 'avatar name contacts' 'avatar summary summary';
+  grid-template-areas: 'avatar name contacts social' 'avatar summary summary summary';
   grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto 1fr;
   margin: 0 0 1.5rem;
+  @media (max-width: $size-lg) {
+    grid-template-areas: 'avatar name contacts contacts' 'avatar summary summary social';
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto auto 1fr auto;
+  }
+  @media (max-width: $size-md) {
+    grid-template-areas: 'avatar name social' 'avatar contacts contacts' 'avatar summary summary';
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: auto auto 1fr;
+    margin: 0 0 1rem;
+  }
+  @media (max-width: $size-sm) {
+    grid-template-areas: 'avatar name' 'avatar contacts' 'avatar social' 'summary summary';
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-columns: auto 1fr;
+    margin: 0 0 0.5rem;
+  }
+  @media (max-width: $size-xs) {
+    grid-template-areas: 'avatar name' 'avatar social' 'contacts contacts' 'summary summary';
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-columns: auto 1fr;
+    margin: 0 0 0.5rem;
+  }
 }
 
 .avatar-wrapper {
@@ -74,6 +126,7 @@ header {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
+  align-self: start;
 
   &:after {
     content: '';
@@ -90,43 +143,90 @@ header {
     border-radius: 4px;
     position: relative;
     top: 5px;
+    @media (max-width: $size-md) {
+      width: 64px;
+      height: 64px;
+    }
   }
 }
 
-.contacts {
-  grid-area: contacts;
+.social-media,
+.contact-info {
   display: flex;
+  justify-self: end;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.5rem;
+
   > a {
+    flex: 0 0 auto;
     display: inline-flex;
     justify-content: center;
     align-content: center;
     color: var(--text-3);
     line-height: 20px;
+
     > span:first-child {
       width: 18px;
       height: 18px;
       font-size: 20px;
     }
-
+  }
+}
+.social-media {
+  grid-area: social;
+  gap: 0.6rem;
+  @media (min-width: ($size-lg + 1px)) {
+    margin-inline-start: 0.5rem;
+  }
+  @media (max-width: $size-lg) {
+    margin-inline-start: 1rem;
+    align-self: start;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+  @media (max-width: $size-md) {
+    margin-inline-start: 0;
+  }
+  @media (max-width: $size-sm) {
+    justify-self: start;
+  }
+}
+.contact-info {
+  grid-area: contacts;
+  @media (max-width: $size-md) {
+    justify-self: start;
+    margin-top: 0.5rem;
+  }
+  @media (max-width: $size-sm) {
+    flex-wrap: wrap;
+  }
+  > a {
     > span:last-child {
       margin-inline-start: 0.3rem;
     }
   }
+}
 
-  .material-symbols-outlined {
-    font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
-  }
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
 }
 
 .summary {
   grid-area: summary;
-  margin-top: 0.25rem;
+  margin-top: 0.4rem;
 }
 
 .resume-name {
   font-family: var(--font-title);
+  align-self: center;
   font-weight: bold;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  line-height: 1.25rem;
+  margin-top: 0.25rem;
+  margin-inline-end: 1rem;
+  @media (max-width: $size-md) {
+    font-size: 1.25rem;
+  }
 }
 </style>

@@ -17,4 +17,5 @@ import Resume from '@/Resume.vue';
     padding: 0;
   }
 }
+
 </style>
