@@ -1,5 +1,8 @@
 :root {
   font-size: 16px;
+  @media print {
+    font-size: 14px;
+  }
   --font-text: 'Cairo', sans-serif;
   --font-title: 'Raleway', sans-serif;
 
@@ -67,7 +70,6 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

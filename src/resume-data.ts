@@ -1,14 +1,16 @@
 import TapsellLogo from '@/assets/tapsell.png';
 import logo from '@/assets/logo.svg';
-import MetrixLogo from '@/assets/metrix.png';
+import Mastermind from '@/assets/mastermind-logo.png';
+import Huma from '@/assets/humaforhealth_logo.jpeg';
+import Klassroom from '@/assets/klassroom.jpeg';
 import type { WorkExperienceModel } from '@/models/experience';
 
 export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
-    icon: logo,
+    icon: Huma,
     company: 'Huma',
     country: 'England',
-    type: 'full time',
+    type: 'full-time',
     positions: [
       {
         title: 'Lead Frontend Engineer',
@@ -30,7 +32,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
     icon: TapsellLogo,
     company: 'Tapsell',
     country: 'iran',
-    type: 'full time',
+    type: 'full-time',
     positions: [
       {
         title: 'Director of Technical Operations',
@@ -41,7 +43,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <li>Assist tech teams in workflow, communication, and documentation.</li>
 <li>Increase developers' performance by studying and providing DevOps tools and enhancing their experience.</li>
 <li>Directly work with the VP of Engineering to help manage engineering teams and provide solutions for processes.</li>
-<li>Develop CLI tools with NodeJS and implement CI/CD pipelines.</li>
+<li>Develop CLI tools with Node.js and implement CI/CD pipelines.</li>
 </ul>`,
       },
       {
@@ -59,9 +61,22 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <p>Our front-end developers were working in separate teams without any interactions. By conducting weekly knowledge-sharing meetings and cross-team code review sessions, I was able to create a connected and targeted team. Besides, by creating a shared mono-repo library not only did we skip a lot of repeated work, but also we had more interactions as we were all working on the same project.</p`,
       },
       {
+        title: 'Senior Frontend Engineer',
+        start: { month: '6', year: '2018' },
+        end: { month: '12', year: '2019' },
+        desc: `
+<p>I worked in 3 different teams, designed UIs, implemented front-end projects from scratch, and hired developers</p>
+<ul>
+        <li>Design UI and Develop three advanced analytical Angular panels single-handedly</li>
+<li>Develop an SSG documentation platform with Jekyll + Gulp</li>
+<li>Mentor two front-end interns</li>
+</ul>
+`,
+      },
+      {
         title: 'Frontend Engineer',
         start: { month: '10', year: '2017' },
-        end: { month: '7', year: '2019' },
+        end: { month: '6', year: '2018' },
         desc: `
 <ul>
 <li>Maintain and develop two Angular Material complex panels</li>
@@ -73,49 +88,35 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
     ],
   },
   {
-    icon: logo,
+    icon: Mastermind,
     company: 'Teetap',
     country: 'Canada',
-    type: 'freelance',
+    type: 'part-time freelance',
     positions: [
       {
         title: 'Flutter Developer',
         start: { month: '2', year: '2020' },
-        end: { month: '9', year: '2021' },
-        desc: 'Teetap is a small remote team of flutter game developers.',
+        desc: `
+        <p>A small team of friends working on Flutter mobile games:</p>
+        <ul>
+<li>Mastermind Pro: a game based on the classic Mastermind</li>
+<li>Abalone: an Abalone game for Android and iOS</li>
+</ul>
+`,
       },
     ],
   },
   {
-    icon: logo,
+    icon: Klassroom,
     company: 'Klassroom',
     country: 'Canada',
-    type: 'contract',
-    positions: [
-      {
-        title: 'Frontend Team Lead',
-        start: { month: '6', year: '2020' },
-        end: { month: '12', year: '2020' },
-        desc: 'Teetap is a small remote team of flutter game developers.',
-      },
-    ],
-  },
-  {
-    icon: MetrixLogo,
-    company: 'Metrix',
-    country: 'Iran',
-    type: 'contract',
+    type: 'contract remote',
     positions: [
       {
         title: 'Senior Frontend Engineer',
-        start: { month: '6', year: '2018' },
-        end: { month: '12', year: '2019' },
-        desc: `<ul>
-        <li>Design UI and Develop two advanced analytical Angular panels single-handedly</li>
-<li>Develop an SSG documentation platform with Jekyll + Gulp</li>
-<li>Mentor two front-end interns</li>
-</ul>
-`,
+        start: { month: '6', year: '2020' },
+        end: { month: '12', year: '2020' },
+        desc: `<ul><li>Develop two LMS panels with Angular with custom internal design system</li></ul>`,
       },
     ],
   },

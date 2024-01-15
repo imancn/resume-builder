@@ -36,32 +36,39 @@ const otherSkills: string[] = [
 </script>
 
 <template>
-  <h3 class="section-title">Skills</h3>
-  <ul class="skills-list">
-    <li v-for="s of skills" :key="s.name" class="skill">
-      <div class="skill-name">{{ s.name }}</div>
-      <a v-if="s.badge" :class="'badge badge-' + s.badge" :href="s.badgeLink" target="_blank">{{
-        s.badge
-      }}</a>
-      <div
-        v-if="s.topPercentileInStackoverflow"
-        class="top-percentile"
-        :title="`Top ${s.topPercentileInStackoverflow}% in StackOverFlow`"
-      >
-        Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
-        <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
-      </div>
-      <div class="skill-years">{{ s.years }}+ Years</div>
-    </li>
-  </ul>
-  <ul class="other-skills">
-    <li v-for="s of otherSkills" :key="s">
-      <span>{{ s }}</span>
-    </li>
-  </ul>
+  <div class="skills-list-wrapper">
+    <h3 class="section-title">Skills</h3>
+    <ul class="skills-list">
+      <li v-for="s of skills" :key="s.name" class="skill">
+        <div class="skill-name">{{ s.name }}</div>
+        <a v-if="s.badge" :class="'badge badge-' + s.badge" :href="s.badgeLink" target="_blank">{{
+          s.badge
+        }}</a>
+        <div
+          v-if="s.topPercentileInStackoverflow"
+          class="top-percentile"
+          :title="`Top ${s.topPercentileInStackoverflow}% in StackOverFlow`"
+        >
+          Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
+          <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
+        </div>
+        <div class="skill-years">{{ s.years }}+ Years</div>
+      </li>
+    </ul>
+    <ul class="other-skills">
+      <li v-for="s of otherSkills" :key="s">
+        <span>{{ s }}</span>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style scoped lang="scss">
+.skills-list-wrapper {
+  @media print {
+    break-inside: avoid;
+  }
+}
 .skills-list {
   list-style: none;
   margin: 0;
