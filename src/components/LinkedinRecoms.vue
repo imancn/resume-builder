@@ -10,7 +10,7 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue';
     <div class="linkedin-icon">
       <IconLinkedin :is-colored="true" />
     </div>
-    <div>My Colleagues' Recommendations</div>
+    <div class="linkedin-recom-text">LinkedIn Recommendations</div>
     <div class="outside-link-icon"><span class="material-symbols-outlined">open_in_new</span></div>
   </a>
 </template>
@@ -27,6 +27,9 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue';
   &:hover {
     opacity: 0.9;
   }
+}
+.linkedin-recom-text {
+  margin-inline-end: 0.25rem;
 }
 .linkedin-icon {
   width: 30px;

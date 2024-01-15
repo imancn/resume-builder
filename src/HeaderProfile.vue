@@ -68,7 +68,7 @@ const socialMedia: SocialMedia[] = [
 
     <!--    </div>-->
     <div class="social-media">
-      <a v-for="s of socialMedia" :key="s.link" :href="s.link" :class="s.class">
+      <a v-for="s of socialMedia" :key="s.link" :href="s.link" :class="s.class" target="_blank">
         <span v-if="s.icon" class="material-symbols-outlined">{{ s.icon }}</span>
         <span v-else><component v-bind:is="s.iconComponent"></component></span>
       </a>

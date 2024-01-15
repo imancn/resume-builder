@@ -54,6 +54,6 @@ import HonorsList from '@/HonorsList.vue';
 
 .aside {
   flex: 0 0 min(320px, 30%);
-  min-width: 275px;
+  min-width: 285px;
 }
 </style>

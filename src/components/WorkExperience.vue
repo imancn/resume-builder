@@ -31,9 +31,6 @@ function getDateRangeLengthBetweenPositions(
   const months = endMonth ? endMonth - startMonth : nowDate.getMonth() + 1 - startMonth;
   const totalMonths = years * 12 + months;
 
-  // return years === 0
-  //   ? `${months} Months`
-  //   : `${years}${months >= 6 ? '.5+' : months > 0 ? '+' : ''} Years`;
   return totalMonths <= 1
     ? '1 month'
     : totalMonths < 12
