@@ -7,7 +7,7 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
     <div class="stackoverflow-icon">
       <IconStackoverflow :is-colored="true" />
     </div>
-    <div class="reputation"><span class="rep-number">5k+</span> <span>Reputation</span></div>
+    <div class="reputation"><span class="rep-number">6k+</span> <span>Reputation</span></div>
     <div class="badge">Angular bronze badge</div>
     <div class="tags">
       <span>Top</span>
