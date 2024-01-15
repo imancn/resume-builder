@@ -1,19 +1,30 @@
 <script setup lang="ts">
-import type { WorkExperienceModel } from '@/models/experience';
+import type { WorkExperienceModel, WorkPositionModel } from '@/models/experience';
 
 const props = defineProps<{
   work: WorkExperienceModel;
 }>();
 
-function getDateRangeLength() {
-  const endPosition = props.work.positions[0]?.end;
-  const endYear = endPosition && parseInt(endPosition.year, 10);
-  const endMonth = endPosition && parseInt(endPosition.month, 10);
+// function getWholeDateRangeLength() {
+//   const endPosition = props.work.positions[0];
+//   const startPosition = props.work.positions[props.work.positions.length - 1];
+//   if (!startPosition || !endPosition) throw new Error('No positions found');
+//   return getDateRangeLengthBetweenPositions(startPosition, endPosition);
+// }
+function getPositionDateRangeLength(position: WorkPositionModel) {
+  return getDateRangeLengthBetweenPositions(position, position);
+}
+function getDateRangeLengthBetweenPositions(
+  startPosition: WorkPositionModel,
+  endPosition: WorkPositionModel,
+) {
+  const endPositionEnd = endPosition.end;
+  const endYear = endPositionEnd && parseInt(endPositionEnd.year, 10);
+  const endMonth = endPositionEnd && parseInt(endPositionEnd.month, 10);
 
-  const startPosition = props.work.positions[props.work.positions.length - 1]?.start;
-  if (!startPosition) throw new Error('No start time for the position found');
-  const startYear = parseInt(startPosition.year, 10);
-  const startMonth = parseInt(startPosition.month, 10);
+  const startPositionStart = startPosition.start;
+  const startYear = parseInt(startPositionStart.year, 10);
+  const startMonth = parseInt(startPositionStart.month, 10);
   const nowDate = new Date();
 
   const years: number = endYear ? endYear - startYear : nowDate.getFullYear() - startYear;
@@ -22,6 +33,23 @@ function getDateRangeLength() {
   return years === 0
     ? `${months} Months`
     : `${years}${months >= 6 ? '.5+' : months > 0 ? '+' : ''} Years`;
+}
+function getMonthName(monthNumber: string) {
+  const monthNames = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'June',
+    'July',
+    'Aug',
+    'Sept',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  return monthNames[parseInt(monthNumber) - 1];
 }
 </script>
 
@@ -39,10 +67,15 @@ function getDateRangeLength() {
       <div class="company">
         <span class="company-name">{{ work.company }}</span>
         - <span class="job-type">{{ work.type }}</span>
+        <span class="position-time">{{ getPositionDateRangeLength(p) }}</span>
       </div>
 
       <div class="time">
-        <span>{{ getDateRangeLength() }}</span>
+        <span class="position-date-range"
+          >{{ getMonthName(p.start.month) }} {{ p.start.year }} -
+          {{ p.end ? getMonthName(p.end.month) : 'Present' }}
+          {{ p.end?.year }}
+        </span>
       </div>
 
       <div class="job-desc" v-html="p.desc"></div>
@@ -90,6 +123,9 @@ function getDateRangeLength() {
   align-items: center;
   text-transform: capitalize;
 }
+.position-date-range {
+  color: var(--text-3);
+}
 .company {
   grid-area: company;
   text-transform: capitalize;
@@ -101,6 +137,13 @@ function getDateRangeLength() {
   //color: var(--text-3);
 }
 .job-type {
+  color: var(--text-3);
+  font-weight: normal;
+}
+.position-time {
+  margin-inline-start: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
   color: var(--text-3);
 }
 .job-title {

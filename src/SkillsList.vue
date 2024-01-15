@@ -48,7 +48,7 @@ const otherSkills: string[] = [
         class="top-percentile"
         :title="`Top ${s.topPercentileInStackoverflow}% in StackOverFlow`"
       >
-        Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span> in
+        Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
         <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
       </div>
       <div class="skill-years">{{ s.years }}+ Years</div>
@@ -95,6 +95,7 @@ const otherSkills: string[] = [
     width: 14px;
     height: 14px;
     display: inline-block;
+    margin-inline-start: 0.25rem;
   }
 }
 .badge {
@@ -106,6 +107,7 @@ const otherSkills: string[] = [
   background: #eee;
   margin-inline-start: 0.5rem;
   cursor: pointer;
+  white-space: nowrap;
   &::before {
     content: '';
     vertical-align: 1px;
