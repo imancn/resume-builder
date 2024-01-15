@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import type { WorkExperienceModel, WorkPositionModel } from '@/models/experience';
-
-const props = defineProps<{
-  work: WorkExperienceModel;
-}>();
-
+import UtLogo from '@/assets/university-of-tehran.jpeg';
 // function getWholeDateRangeLength() {
 //   const endPosition = props.work.positions[0];
 //   const startPosition = props.work.positions[props.work.positions.length - 1];
@@ -60,36 +55,25 @@ function getMonthName(monthNumber: string) {
 
 <template>
   <div class="company-work-exp">
-    <div class="work-experience" v-for="(p, i) in work.positions" v-bind:key="p.title">
-      <div v-if="i === 0" class="company-icon">
-        <img :src="work.icon" :alt="work.company" width="40" height="40" />
-      </div>
-      <div v-else class="nested-position-company-placeholder">
-        <span class="nested-position-bullet"></span>
+    <div class="education">
+      <div class="company-icon">
+        <img :src="UtLogo" alt="University of Tehran" width="40" height="40" />
       </div>
 
-      <h3 class="job-title">{{ p.title }}</h3>
+      <h3 class="title">University of Tehran</h3>
       <div class="company">
-        <span class="company-name">{{ work.company }}</span>
-        - <span class="job-type">{{ work.type }}</span>
-        <span class="position-time">{{ getPositionDateRangeLength(p) }}</span>
+        <span class="company-name">Bachelor's degree, Computer Software Engineering</span>
       </div>
 
       <div class="time">
-        <span class="position-date-range">
-          {{ getMonthName(p.start.month) }} {{ p.start.year }} -
-          {{ p.end ? getMonthName(p.end.month) : 'Present' }}
-          {{ p.end?.year }}
-        </span>
+        <span class="position-date-range">2015 - 2019</span>
       </div>
-
-      <div class="job-desc" v-html="p.desc"></div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.work-experience {
+.education {
   display: grid;
   grid-template-areas: 'icon title time' 'icon company time' 'empty desc desc';
   grid-template-rows: auto auto 1fr;
@@ -160,7 +144,7 @@ function getMonthName(monthNumber: string) {
   grid-area: title;
   line-height: 22px;
 }
-.work-experience {
+.education {
   &:not(:last-child) {
     .job-desc {
       &:before {
