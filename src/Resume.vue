@@ -17,8 +17,12 @@ import HonorsList from '@/HonorsList.vue';
           <Education />
         </article>
         <aside class="aside">
-          <SkillsList />
-          <HonorsList />
+          <section class="skills-list">
+            <SkillsList />
+          </section>
+          <section class="honors-list">
+            <HonorsList />
+          </section>
         </aside>
       </div>
     </main>
@@ -46,14 +50,30 @@ import HonorsList from '@/HonorsList.vue';
 .main-wrapper {
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .content {
-  flex: 1 0 0;
+  flex: 1 0 500px;
 }
 
+$aside-min-width: 285px;
 .aside {
-  flex: 0 0 min(320px, 30%);
-  min-width: 285px;
+  flex: 1 0 min(320px, 30%);
+  min-width: $aside-min-width;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-self: flex-start;
+}
+.skills-list,
+.honors-list {
+  min-width: $aside-min-width;
+  flex: 1 1 320px;
+  //margin-bottom: 1.5rem;
+}
+.skills-list {
+  flex: 1 1 320px;
+  //margin-bottom: 1.5rem;
 }
 </style>
