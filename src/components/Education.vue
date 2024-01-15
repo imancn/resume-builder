@@ -1,56 +1,5 @@
 <script setup lang="ts">
 import UtLogo from '@/assets/university-of-tehran.jpeg';
-// function getWholeDateRangeLength() {
-//   const endPosition = props.work.positions[0];
-//   const startPosition = props.work.positions[props.work.positions.length - 1];
-//   if (!startPosition || !endPosition) throw new Error('No positions found');
-//   return getDateRangeLengthBetweenPositions(startPosition, endPosition);
-// }
-function getPositionDateRangeLength(position: WorkPositionModel) {
-  return getDateRangeLengthBetweenPositions(position, position);
-}
-function getDateRangeLengthBetweenPositions(
-  startPosition: WorkPositionModel,
-  endPosition: WorkPositionModel,
-) {
-  const endPositionEnd = endPosition.end;
-  const endYear = endPositionEnd && parseInt(endPositionEnd.year, 10);
-  const endMonth = endPositionEnd && parseInt(endPositionEnd.month, 10);
-
-  const startPositionStart = startPosition.start;
-  const startYear = parseInt(startPositionStart.year, 10);
-  const startMonth = parseInt(startPositionStart.month, 10);
-  const nowDate = new Date();
-
-  const years: number = endYear ? endYear - startYear : nowDate.getFullYear() - startYear;
-  const months = endMonth ? endMonth - startMonth : nowDate.getMonth() + 1 - startMonth;
-  const totalMonths = years * 12 + months;
-
-  return totalMonths <= 1
-    ? '1 month'
-    : totalMonths < 12
-    ? `${totalMonths} months`
-    : totalMonths % 12 === 0
-    ? `${totalMonths / 12}+ years`
-    : `${Math.floor(totalMonths / 12)}${totalMonths % 12 >= 6 ? '.5' : ''}+ years`;
-}
-function getMonthName(monthNumber: string) {
-  const monthNames = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'June',
-    'July',
-    'Aug',
-    'Sept',
-    'Oct',
-    'Nov',
-    'Dec',
-  ];
-  return monthNames[parseInt(monthNumber) - 1];
-}
 </script>
 
 <template>
