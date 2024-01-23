@@ -112,3 +112,9 @@ a {
 .mt-4 {
   margin-top: 1.5rem !important;
 }
+
+.print-hide {
+  @media print {
+    display: none !important;
+  }
+}

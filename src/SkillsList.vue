@@ -3,36 +3,38 @@ import type { Skill } from '@/models/skill';
 import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 
 const skills: Skill[] = [
-  { name: 'HTML CSS', years: 9, topPercentileInStackoverflow: 10 },
-  { name: 'JavaScript', years: 6, topPercentileInStackoverflow: 10 },
-  { name: 'TypeScript', years: 5, topPercentileInStackoverflow: 5 },
+  { name: 'HTML CSS', years: 2014, topPercentileInStackoverflow: 10 },
+  { name: 'JavaScript TypeScript', years: 2016, topPercentileInStackoverflow: 10 },
   {
     name: 'Angular',
-    years: 5,
+    years: 2017,
     topPercentileInStackoverflow: 5,
     badge: 'bronze',
     badgeLink: 'https://stackoverflow.com/help/badges/6902/angular?userid=1889607',
   },
-  { name: 'React', years: 2 },
-  { name: 'Webpack', years: 3 },
+  { name: 'React', years: 2019 },
 ];
 const otherSkills: string[] = [
   'SCSS',
   'Svelte',
+  'Webpack',
+  'Vite',
+  'Rollup',
+  'SVG',
   'Gatsby',
   'NodeJS',
   'GraphQL',
-  'Gulp',
-  'Gitlab CI',
+  'CI/CD',
   'Regex',
-  'SVG',
-  'Rollup',
-  'Wordpress',
   'Redux',
   'MongoDB',
   'Flutter',
-  'Bootstrap',
+  'RxJS',
 ];
+
+function calculateYears(year: number) {
+  return new Date().getFullYear() - year;
+}
 </script>
 
 <template>
@@ -52,7 +54,7 @@ const otherSkills: string[] = [
           Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
           <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
         </div>
-        <div class="skill-years">{{ s.years }}+ Years</div>
+        <div class="skill-years">{{ calculateYears(s.years) }}+ Years</div>
       </li>
     </ul>
     <ul class="other-skills">

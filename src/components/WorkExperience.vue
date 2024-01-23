@@ -95,6 +95,9 @@ function getMonthName(monthNumber: string) {
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 3.5rem 1fr auto;
   margin-bottom: 0.75rem;
+  @media print {
+    margin-bottom: 0rem;
+  }
   &:last-child {
     @media not print {
       margin-bottom: 1.5rem;

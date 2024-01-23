@@ -76,9 +76,8 @@ const socialMedia: SocialMedia[] = [
 
     <div class="summary">
       <p>
-        I'm an experienced front-end developer and a chapter lead with a bit of interest in UI
-        design and mobile app development. Also, with great abilities in team management and
-        leadership.
+        Experienced front-end engineer and a team lead with an interest in UI design and mobile app
+        development.
       </p>
     </div>
   </header>
@@ -195,7 +194,7 @@ header {
   grid-area: contacts;
   @media (max-width: $size-md) {
     justify-self: start;
-    margin-top: 0.5rem;
+    margin-top: 0.25rem;
   }
   @media (max-width: $size-sm) {
     flex-wrap: wrap;
@@ -213,7 +212,7 @@ header {
 
 .summary {
   grid-area: summary;
-  margin-top: 0.4rem;
+  margin-top: 0.25rem;
 }
 
 .resume-name {

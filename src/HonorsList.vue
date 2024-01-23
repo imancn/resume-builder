@@ -13,8 +13,4 @@ import LinkedinRecoms from '@/components/LinkedinRecoms.vue';
   </div>
 </template>
 
-<style scoped lang="scss">
-.honors {
-  margin-top: 1.5rem;
-}
-</style>
+<style scoped lang="scss"></style>

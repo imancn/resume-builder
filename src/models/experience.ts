@@ -4,6 +4,7 @@ export interface WorkExperienceModel {
   country: string;
   type: 'contract' | 'full-time' | 'part-time freelance' | 'freelance' | 'contract remote' | string;
   positions: WorkPositionModel[];
+  hideInResume?: boolean;
 }
 
 export interface WorkPositionModel {
