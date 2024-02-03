@@ -46,8 +46,8 @@ function getMonthName(monthNumber: string) {
     'Mar',
     'Apr',
     'May',
-    'June',
-    'July',
+    'Jun',
+    'Jul',
     'Aug',
     'Sept',
     'Oct',
@@ -69,11 +69,12 @@ function getMonthName(monthNumber: string) {
       </div>
 
       <h3 class="job-title">
-        <span class="job-position-name">{{ p.title }}</span
-        ><span class="job-position-at-before-company">at</span
-        ><span class="company-name">{{ work.company }}</span>
+        <span class="job-position-name">{{ p.title }}</span>
+<!--        <span class="job-position-at-before-company">at</span>-->
+<!--        <span class="company-name">{{ work.company }}</span>-->
       </h3>
       <div class="job-metadata">
+        <b class="company-name">{{ work.company }}</b> -
         <span class="country-name">{{ work.country }}</span>
         - <span class="job-type">{{ work.type }}</span>
         <span class="position-time">{{ getPositionDateRangeLength(p) }}</span>

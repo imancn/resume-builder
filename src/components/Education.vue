@@ -15,7 +15,7 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
       </div>
 
       <div class="time">
-        <span class="position-date-range">2015 - 2019</span>
+        <span class="position-date-range">Sep 2015 - Jun 2019</span>
       </div>
     </div>
   </div>

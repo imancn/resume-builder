@@ -9,29 +9,29 @@ const skills: Skill[] = [
     name: 'Angular',
     since: 2017,
     topPercentileInStackoverflow: 5,
-    badge: 'bronze',
+    // badge: 'bronze',
     badgeLink: 'https://stackoverflow.com/help/badges/6902/angular?userid=1889607',
   },
   { name: 'React', since: 2019 },
 ];
+// prettier-ignore
 const otherSkills: string[] = [
+  'HTML5', 'CSS3', 'JS', 'TS',
   'SCSS',
   'Svelte',
-  'Webpack',
-  'Vite',
-  'Rollup',
+  'Webpack', 'Vite', 'Rollup',
   'SVG',
   'Gatsby',
-  'NodeJS',
+  'Node.js', 'MongoDB',
   'GraphQL',
   'CI/CD',
   'Regex',
   'Redux',
-  'MongoDB',
   'Flutter',
   'RxJS',
   'NgRx',
-  'Nx',
+  'Jest', 'Nx', 'Cypress', 'Jasmine', 'Karma',
+  'Bash',
   'Storybook',
 ];
 
@@ -140,9 +140,9 @@ function calculateYears(year: number) {
 .other-skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.4rem 0.5rem;
   list-style: none;
-  margin: 0.75rem 0 0;
+  margin: 0.5rem 0 0;
   padding: 0;
   line-height: 12px;
   font-family: var(--font-title);
