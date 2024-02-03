@@ -51,6 +51,9 @@ import HonorsList from '@/HonorsList.vue';
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  @media (max-width: 800px) {
+    gap: 0.5rem;
+  }
 }
 
 .content {
