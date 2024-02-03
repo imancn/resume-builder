@@ -19,8 +19,8 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue';
 .linkedin-recoms {
   display: flex;
   align-items: center;
-  color: #0a66c2;
-  background: #f0f8ff;
+  color: hsl(210, 90%, 40%);
+  background: hsl(208, 100%, 93%);
   border-radius: 4px;
   padding: 0 0.5rem 0 0;
 
@@ -34,10 +34,9 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue';
 .linkedin-icon {
   width: 30px;
   height: 30px;
-  background: #dae8f5;
-  color: #0a66c2;
+  background: hsl(208, 57%, 86%);
+  color: hsl(210, 90%, 40%);
   border-radius: 4px 0 0 4px;
-
   padding: 0.25rem 0.5rem 0.5rem;
   margin-inline-end: 0.75rem;
 }
