@@ -30,6 +30,9 @@ const otherSkills: string[] = [
   'MongoDB',
   'Flutter',
   'RxJS',
+  'NgRx',
+  'Nx',
+  'Storybook',
 ];
 
 function calculateYears(year: number) {
