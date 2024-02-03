@@ -23,7 +23,8 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <li>Established CI/CD, code linting and integrated testing using ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic. Reduced staging bugs by 60%, decreasing CI time by 600%</li>
 <li>Achieved a 20% decrease in bundle size by removing 10 dependencies, optimising configurations and optimising assets</li>
 <li>Crafted 10+ pages of coding guidelines and process docs and established personalized growth roadmaps</li>
-<li>Managed 3+ frontend React and Angular mono-repositories projects, including internal NPM packages</li>
+<li>Managed 3+ frontend React and Angular mono-repository projects, including internal NPM packages</li>
+<li>Engineered an automated workflow, reducing task completion time by 50%, handling development, QA, and deployment</li>
 </ul>`,
       },
     ],
@@ -44,7 +45,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <li>Facilitate technical operations and procedures like onboarding, knowledge sharing, code quality, etc.</li>
 <li>Directed tech teams in workflow, communication, and documentation automating 10+ complex internal processes</li>
 <li>Increased developers' performance by studying and providing DevOps tools and enhancing their experience</li>
-<li>Created CLI tools and chat bots with Node.js and implement CI/CD pipelines</li>
+<li>Created CLI tools and chat bots with Node.js and implemented CI/CD pipelines</li>
 </ul>`,
       },
       {
@@ -54,10 +55,10 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         // <p>I joined Tapsell as a junior front-end developer and as the company was growing I managed to gain trust and create a front-end chapter (we were only 2 front-end developers at the time) later by growing my team I had a huge impact on the quality of work in front-end teams of Tapsell.</p>
         desc: `
 <ul>
-<li>Led a team of 15+ frontend developers in multiple products</li>
+<li>Led a team of 20+ frontend developers in more than 5 products across multiple agile teams</li>
 <li>Conducted interviews and hired 10+ frontend engineers and coached 10+ interns</li>
 <li>Maintained 10+ monorepo frontend (React, Angular, Vue 3 and VanillaJS) dashboards and web apps</li>
-<li>Spearheaded the development of a full-featured Angular library for internal design system</li>
+<li>Spearheaded the development of a full-featured Angular library for internal design system including an SSO platform</li>
 </ul>
 `,
         // <p>Our front-end developers were working in separate teams without any interactions. By conducting weekly knowledge-sharing meetings and cross-team code review sessions, I was able to create a connected and targeted team. Besides, by creating a shared mono-repo library not only did we skip a lot of repeated work, but also we had more interactions as we were all working on the same project.</p
@@ -69,9 +70,9 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         // <p>I worked in 3 different teams, designed UIs, implemented front-end projects from scratch, and hired developers</p>
         desc: `
 <ul>
-<li>Designed the UI and implemented 6 analytical Angular and React dashboards</li>
+<li>Designed the UI and implemented 6 analytical Angular and React dashboards and web apps</li>
 <li>Developed 3 SSG documentation platforms with React + Gatsby and 2 ad-serving SDKs using Webpack + Svelte</li>
-<li>Interviewed and mentored 3 front-end interns</li>
+<li>Drafted testing projects, Interviewed and mentored 5 front-end interns in React and Angular</li>
 <li>Set up full CI and tooling for linting and deployment using GitLab CI, ESLint, and Stylelint for 10+ frontend projects</li>
 </ul>`,
       },
