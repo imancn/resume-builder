@@ -7,9 +7,11 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
     <div class="stackoverflow-icon">
       <IconStackoverflow :is-colored="true" />
     </div>
-    <div class="reputation"><span class="rep-number">6k+</span> <span>Reputation in StackOverFLow</span></div>
+    <div class="reputation">
+      <span class="rep-number">6k+</span> <span>Reputation in StackOverFLow</span>
+    </div>
     <div class="badge">Angular bronze badge</div>
-    <div class="tags">
+    <div class="tags print-hide">
       <span>Top</span>
       <div class="percent-wrapper">
         <div class="percent">5%</div>
@@ -64,7 +66,7 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
   grid-area: tags;
   display: flex;
   align-items: center;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0.25rem;
   grid-gap: 0.5rem;
   .percent-wrapper {
     display: flex;
