@@ -68,9 +68,13 @@ function getMonthName(monthNumber: string) {
         <span class="nested-position-bullet"></span>
       </div>
 
-      <h3 class="job-title">{{ p.title }}</h3>
-      <div class="company">
-        <span class="company-name">{{ work.company }}</span>
+      <h3 class="job-title">
+        <span class="job-position-name">{{ p.title }}</span
+        ><span class="job-position-at-before-company">at</span
+        ><span class="company-name">{{ work.company }}</span>
+      </h3>
+      <div class="job-metadata">
+        <span class="country-name">{{ work.country }}</span>
         - <span class="job-type">{{ work.type }}</span>
         <span class="position-time">{{ getPositionDateRangeLength(p) }}</span>
       </div>
@@ -91,7 +95,10 @@ function getMonthName(monthNumber: string) {
 <style scoped lang="scss">
 .work-experience {
   display: grid;
-  grid-template-areas: 'icon title time' 'icon company time' 'empty desc desc';
+  grid-template-areas: 'icon title time' 'icon metadata time' 'empty desc desc';
+  @media print {
+    grid-template-areas: 'icon title time' 'icon metadata time' 'desc desc desc';
+  }
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 3.5rem 1fr auto;
   margin-bottom: 0.75rem;
@@ -139,19 +146,19 @@ function getMonthName(monthNumber: string) {
 .position-date-range {
   color: var(--text-3);
 }
-.company {
-  grid-area: company;
+.job-metadata {
+  grid-area: metadata;
   text-transform: capitalize;
-  font-weight: bold;
-  color: var(--text-2);
+  //font-weight: bold;
+  //color: var(--text-2);
 }
 .company-name {
   //font-weight: bold;
   //color: var(--text-3);
 }
 .job-type {
-  color: var(--text-3);
-  font-weight: normal;
+  //color: var(--text-3);
+  //font-weight: normal;
 }
 .position-time {
   margin-inline-start: 0.75rem;
@@ -162,6 +169,11 @@ function getMonthName(monthNumber: string) {
 .job-title {
   grid-area: title;
   line-height: 22px;
+}
+.job-position-at-before-company {
+  font-weight: normal;
+  margin: 0 6px;
+  font-size: 85%;
 }
 .work-experience {
   &:not(:last-child) {
@@ -182,18 +194,32 @@ function getMonthName(monthNumber: string) {
   grid-area: desc;
   margin-top: 0.25rem;
   position: relative;
+  @media print {
+    letter-spacing: -0.4px;
+    padding-inline-start: 1.5rem;
+  }
 }
 </style>
 <style lang="scss">
-.job-desc {
+.work-experience .job-desc {
   > p:not(:last-child) {
     margin-block-end: 0.75rem;
   }
   > ul {
     margin-block-end: 0.75rem;
-    padding-inline-start: 1.5rem;
-  }
-  > li {
+    padding-inline-start: 1rem;
+    list-style: none;
+    > li {
+      position: relative;
+      &:before {
+        content: '⬗';
+        position: absolute;
+        top: 0;
+        left: -1.4rem;
+        font-size: 0.85rem;
+        color: var(--text-3);
+      }
+    }
   }
 }
 </style>

@@ -7,7 +7,7 @@ const workExperiences: WorkExperienceModel[] = WORK_EXPERIENCES;
 </script>
 
 <template>
-  <h3 class="section-title print-hide">Experiences</h3>
+  <h3 class="section-title">Experiences</h3>
   <WorkExperience
     v-for="w in workExperiences"
     :work="w"
