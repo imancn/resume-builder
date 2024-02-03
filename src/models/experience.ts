@@ -1,5 +1,5 @@
 export interface WorkExperienceModel {
-  icon: string;
+  icon: {};
   company: string;
   country: string;
   type: 'contract' | 'full-time' | 'part-time freelance' | 'freelance' | 'contract remote' | string;

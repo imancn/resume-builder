@@ -19,10 +19,11 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         start: { month: '11', year: '2022' },
         desc: `
 <ul>
-<li>Unified the remote and disconnected frontend teams and Lead a team of 15-20 frontend engineers</li>
-<li>Established full CI/CD and tooling for code listing, integrated testing, QA, visual testing, and deployment using GitHub actions, ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic.</li>
-<li>Created coding guidelines, team documentation, and personalized growth roadmap for team members</li>
-<li>Managed multiple frontend React and Angular projects, including internal NPM packages.</li>
+<li>Unified the remote and disconnected frontend teams and Led a team of 15-20 frontend engineers</li>
+<li>Established CI/CD, code linting and integrated testing using ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic. Reduced staging bugs by 60%, decreasing CI time by 600%</li>
+<li>Achieved a 20% decrease in bundle size by removing 10 dependencies, optimising configs and optimising assets</li>
+<li>Crafted 10+ pages of coding guidelines and process docs and established personalized growth roadmap for 15 team members</li>
+<li>Managed 3+ frontend React and Angular monorepo projects, including internal NPM packages</li>
 </ul>`,
       },
     ],
@@ -30,7 +31,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
     icon: TapsellLogo,
     company: 'Tapsell',
-    country: 'iran',
+    country: 'Iran',
     type: 'full-time',
     positions: [
       {
@@ -41,22 +42,22 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         desc: `
 <ul>
 <li>Facilitate technical operations and procedures like onboarding, knowledge sharing, code quality, etc.</li>
-<li>Assist tech teams in workflow, communication, and documentation.</li>
-<li>Increase developers' performance by studying and providing DevOps tools and enhancing their experience.</li>
-<li>Develop CLI tools and chat bots with Node.js and implement CI/CD pipelines.</li>
+<li>Directed tech teams in workflow, communication, and documentation automating 10+ complex internal processes</li>
+<li>Increase developers' performance by studying and providing DevOps tools and enhancing their experience</li>
+<li>Created CLI tools and chat bots with Node.js and implement CI/CD pipelines</li>
 </ul>`,
       },
       {
         title: 'Frontend Chapter Lead',
         start: { month: '7', year: '2019' },
-        end: { month: '3', year: '2022' },
+        end: { month: '2', year: '2022' },
         // <p>I joined Tapsell as a junior front-end developer and as the company was growing I managed to gain trust and create a front-end chapter (we were only 2 front-end developers at the time) later by growing my team I had a huge impact on the quality of work in front-end teams of Tapsell.</p>
         desc: `
 <ul>
 <li>Led a team of 15+ frontend developers in multiple products</li>
-<li>Conducted interviews for future candidates</li>
-<li>Maintained multiple monorepo frontend (React, Angular & VanillaJS) projects</li>
-<li>Spearheaded the development of a full-featured Angular library for Tapsell design system</li>
+<li>Conducted interviews and hired 10+ frontend engineers and coached 10+ interns</li>
+<li>Maintained 10+ monorepo frontend (React, Angular, Vue 3 and VanillaJS) dashboards and web apps</li>
+<li>Spearheaded the development of a full-featured Angular library for internal design system</li>
 </ul>
 `,
         // <p>Our front-end developers were working in separate teams without any interactions. By conducting weekly knowledge-sharing meetings and cross-team code review sessions, I was able to create a connected and targeted team. Besides, by creating a shared mono-repo library not only did we skip a lot of repeated work, but also we had more interactions as we were all working on the same project.</p
@@ -68,11 +69,10 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         // <p>I worked in 3 different teams, designed UIs, implemented front-end projects from scratch, and hired developers</p>
         desc: `
 <ul>
-<li>Designed the UI and Developed several analytical Angular and React dashboards</li>
-<li>Developed SSG documentation platforms with React and Gatsby</li>
-<li>Mentored front-end interns</li>
-<li>Developed ad serving SDK project using Webpack + Svelte</li>
-<li>Set up full CI/CD and tooling for code listing and deployment using GitLab CI, ESLint, and Stylelint.</li>
+<li>Designed the UI and implemented 6 analytical Angular and React dashboards</li>
+<li>Developed SSG documentation platforms with React + Gatsby and an ad-serving SDK using Webpack + Svelte</li>
+<li>Interviewed and mentored 3 front-end interns</li>
+<li>Set up full CI and tooling for linting and deployment using GitLab CI, ESLint, and Stylelint</li>
 </ul>`,
       },
     ],
