@@ -76,7 +76,7 @@ const socialMedia: SocialMedia[] = [
 
     <div class="summary">
       <p>
-        Experienced front-end engineer and a team lead with an interest in UI design and mobile app
+        10 years experienced lead front-end engineer with an interest in UI design and mobile app
         development.
       </p>
     </div>
@@ -116,6 +116,9 @@ header {
     grid-template-rows: auto auto auto 1fr;
     grid-template-columns: auto 1fr;
     margin: 0 0 0.5rem;
+  }
+  @media print {
+    margin-bottom: 0.5rem;
   }
 }
 
