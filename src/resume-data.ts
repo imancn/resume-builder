@@ -11,7 +11,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
     icon: Huma,
     company: 'Huma',
-    country: 'England',
+    country: 'London, UK',
     type: 'full-time',
     positions: [
       {
@@ -21,9 +21,9 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <ul>
 <li>Unified the remote and disconnected frontend teams and Led a team of 15-20 frontend engineers</li>
 <li>Established CI/CD, code linting and integrated testing using ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic. Reduced staging bugs by 60%, decreasing CI time by 600%</li>
-<li>Achieved a 20% decrease in bundle size by removing 10 dependencies, optimising configs and optimising assets</li>
-<li>Crafted 10+ pages of coding guidelines and process docs and established personalized growth roadmap for 15 team members</li>
-<li>Managed 3+ frontend React and Angular monorepo projects, including internal NPM packages</li>
+<li>Achieved a 20% decrease in bundle size by removing 10 dependencies, optimising configurations and optimising assets</li>
+<li>Crafted 10+ pages of coding guidelines and process docs and established personalized growth roadmaps</li>
+<li>Managed 3+ frontend React and Angular mono-repositories projects, including internal NPM packages</li>
 </ul>`,
       },
     ],
@@ -43,7 +43,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <ul>
 <li>Facilitate technical operations and procedures like onboarding, knowledge sharing, code quality, etc.</li>
 <li>Directed tech teams in workflow, communication, and documentation automating 10+ complex internal processes</li>
-<li>Increase developers' performance by studying and providing DevOps tools and enhancing their experience</li>
+<li>Increased developers' performance by studying and providing DevOps tools and enhancing their experience</li>
 <li>Created CLI tools and chat bots with Node.js and implement CI/CD pipelines</li>
 </ul>`,
       },
@@ -70,9 +70,9 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         desc: `
 <ul>
 <li>Designed the UI and implemented 6 analytical Angular and React dashboards</li>
-<li>Developed SSG documentation platforms with React + Gatsby and an ad-serving SDK using Webpack + Svelte</li>
+<li>Developed 3 SSG documentation platforms with React + Gatsby and 2 ad-serving SDKs using Webpack + Svelte</li>
 <li>Interviewed and mentored 3 front-end interns</li>
-<li>Set up full CI and tooling for linting and deployment using GitLab CI, ESLint, and Stylelint</li>
+<li>Set up full CI and tooling for linting and deployment using GitLab CI, ESLint, and Stylelint for 10+ frontend projects</li>
 </ul>`,
       },
     ],
