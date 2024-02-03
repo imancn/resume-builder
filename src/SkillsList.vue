@@ -3,16 +3,16 @@ import type { Skill } from '@/models/skill';
 import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 
 const skills: Skill[] = [
-  { name: 'HTML CSS', years: 2014, topPercentileInStackoverflow: 10 },
-  { name: 'JavaScript TypeScript', years: 2016, topPercentileInStackoverflow: 10 },
+  { name: 'HTML CSS', since: 2014, topPercentileInStackoverflow: 10 },
+  { name: 'JavaScript TypeScript', since: 2016, topPercentileInStackoverflow: 10 },
   {
     name: 'Angular',
-    years: 2017,
+    since: 2017,
     topPercentileInStackoverflow: 5,
     badge: 'bronze',
     badgeLink: 'https://stackoverflow.com/help/badges/6902/angular?userid=1889607',
   },
-  { name: 'React', years: 2019 },
+  { name: 'React', since: 2019 },
 ];
 const otherSkills: string[] = [
   'SCSS',
@@ -42,7 +42,7 @@ function calculateYears(year: number) {
 
 <template>
   <div class="skills-list-wrapper">
-    <h3 class="section-title">Skills</h3>
+    <h2 class="section-title">Skills</h2>
     <ul class="skills-list">
       <li v-for="s of skills" :key="s.name" class="skill">
         <div class="skill-name">{{ s.name }}</div>
@@ -57,7 +57,7 @@ function calculateYears(year: number) {
           Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
           <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
         </div>
-        <div class="skill-years">{{ calculateYears(s.years) }}+ Years</div>
+        <div class="skill-years">{{ calculateYears(s.since) }}+ Years</div>
       </li>
     </ul>
     <ul class="other-skills">

@@ -1,6 +1,6 @@
 export interface Skill {
   name: string;
-  years: number;
+  since: number;
   topPercentileInStackoverflow?: number;
   badge?: 'bronze';
   badgeLink?: string;
