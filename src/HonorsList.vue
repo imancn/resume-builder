@@ -2,6 +2,7 @@
 import StackoverflowWidget from '@/components/StackoverflowWidget.vue';
 import LinkedinRecoms from '@/components/LinkedinRecoms.vue';
 import ReactContest from '@/components/ReactContest.vue';
+import Languages from '@/components/Languages.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import ReactContest from '@/components/ReactContest.vue';
     <div class="mt-75">
       <ReactContest />
       <LinkedinRecoms />
+      <Languages />
     </div>
   </div>
 </template>
