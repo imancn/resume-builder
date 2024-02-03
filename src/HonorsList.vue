@@ -6,7 +6,7 @@ import ReactContest from '@/components/ReactContest.vue';
 
 <template>
   <div class="honors">
-    <h3 class="section-title">Honors</h3>
+    <h2 class="section-title">Honors</h2>
     <StackoverflowWidget />
     <div class="mt-75">
       <ReactContest />

@@ -5,7 +5,7 @@ import ReactLogo from '@/assets/react-logo.png';
 <template>
   <a class="react-contest" href="https://quera.org/contest/assignments/9925/scoreboard/">
     <img :src="ReactLogo" alt="React Logo" class="react-logo" width="30px" height="30px" />
-    <div>3rd place in React contest among 200 contesters</div>
+    <div>3rd in React contest among 200 participants</div>
     <div class="outside-link-icon"><span class="material-symbols-outlined">open_in_new</span></div>
   </a>
 </template>

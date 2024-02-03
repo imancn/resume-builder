@@ -3,7 +3,7 @@ import Education from '@/components/Education.vue';
 </script>
 
 <template>
-  <h3 class="section-title print-hide">Education</h3>
+  <h2 class="section-title">Education</h2>
   <Education />
 </template>
 
