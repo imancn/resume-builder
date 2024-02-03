@@ -46,12 +46,21 @@ const socialMedia: SocialMedia[] = [
     class: 'contacts-social-media',
   },
 ];
+
+const yearsOfExperience = (
+  (Date.now() - new Date('2017-05-01').getTime()) /
+  (1000 * 60 * 60 * 24 * 365.25)
+).toFixed();
+const yearsOfLeadershipExperience = (
+  (Date.now() - new Date('2020-04-01').getTime()) /
+  (1000 * 60 * 60 * 24 * 365.25)
+).toFixed();
 </script>
 
 <template>
   <header>
     <div class="avatar-wrapper">
-      <img alt="Avatar" class="avatar" src="./assets/avatar.jpg" width="100" height="100" />
+      <img alt="Avatar" class="avatar" src="./assets/avatar.jpeg" width="100" height="100" />
     </div>
 
     <h1 class="resume-name">Vahid Mohammadi</h1>
@@ -76,8 +85,10 @@ const socialMedia: SocialMedia[] = [
 
     <div class="summary">
       <p>
-        10 years experienced lead front-end engineer with an interest in UI design and mobile app
-        development.
+        Front-end engineer with {{ yearsOfExperience }} years of experience, including
+        {{ yearsOfLeadershipExperience }} years as a leader in enterprise companies, with a keen
+        focus on UI/UX design and mobile app development. Angular contributor and open-source
+        enthusiast.
       </p>
     </div>
   </header>
@@ -144,7 +155,6 @@ header {
     display: block;
     border-radius: 4px;
     position: relative;
-    top: 5px;
     @media (max-width: $size-md) {
       width: 64px;
       height: 64px;
