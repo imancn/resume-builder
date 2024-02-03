@@ -10,7 +10,7 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
       </div>
 
       <h3 class="title">University of Tehran</h3>
-      <div class="company">
+      <div class="job-metadata">
         <span class="company-name">Bachelor's degree, Computer Software Engineering</span>
       </div>
 
@@ -69,7 +69,7 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
 .position-date-range {
   color: var(--text-3);
 }
-.company {
+.job-metadata {
   grid-area: company;
   text-transform: capitalize;
   font-weight: bold;
@@ -92,38 +92,5 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
 .job-title {
   grid-area: title;
   line-height: 22px;
-}
-.education {
-  &:not(:last-child) {
-    .job-desc {
-      &:before {
-        content: '';
-        position: absolute;
-        inset-inline-start: -2.1rem;
-        height: calc(100% - 1rem);
-        width: 1px;
-        background: #ddd;
-        top: 0.75rem;
-      }
-    }
-  }
-}
-.job-desc {
-  grid-area: desc;
-  margin-top: 0.25rem;
-  position: relative;
-}
-</style>
-<style lang="scss">
-.job-desc {
-  > p:not(:last-child) {
-    margin-block-end: 0.75rem;
-  }
-  > ul {
-    margin-block-end: 0.75rem;
-    padding-inline-start: 1.5rem;
-  }
-  > li {
-  }
 }
 </style>
