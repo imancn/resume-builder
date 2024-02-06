@@ -20,7 +20,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         desc: `
 <ul>
 <li>Unified the remote and disconnected frontend teams and Led a team of 15-20 frontend engineers</li>
-<li>Established CI/CD, code linting and integrated testing using ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic. Reduced staging bugs by 60%, decreasing CI time by 600%</li>
+<li>Established CI/CD, code linting and integrated testing using ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic. Reduced staging bugs by 60%, and CI time by 86%</li>
 <li>Achieved a 20% decrease in bundle size by removing 10 dependencies, optimising configurations and optimising assets</li>
 <li>Crafted 10+ pages of coding guidelines and process docs and established personalised growth roadmaps</li>
 <li>Managed 3+ frontend React and Angular Typescript mono-repository projects, including internal NPM packages</li>
