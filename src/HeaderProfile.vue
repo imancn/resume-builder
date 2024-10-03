@@ -56,7 +56,7 @@ const yearsOfLeadershipExperience = (
   (1000 * 60 * 60 * 24 * 365.25)
 ).toFixed();
 
-const phoneNumber = process.env.NETLIFY_APP_CONTEXT.PHONE_NUMBER;
+const phoneNumber = process.env.NETLIFY_PHONE_NUMBER;
 </script>
 
 <template>
@@ -220,11 +220,7 @@ header {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 1,
-    'wght' 500,
-    'GRAD' 0,
-    'opsz' 48;
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
 }
 
 .summary {
