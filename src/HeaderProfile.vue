@@ -75,9 +75,7 @@ const phoneNumber = process.env.NETLIFY_APP_CONTEXT.PHONE_NUMBER;
         <span class="material-symbols-outlined">call</span><span>+447495192782</span>
       </a>
     </div>
-    <!--    <div class="contacts">-->
 
-    <!--    </div>-->
     <div class="social-media">
       <a v-for="s of socialMedia" :key="s.link" :href="s.link" :class="s.class" target="_blank">
         <span v-if="s.icon" class="material-symbols-outlined">{{ s.icon }}</span>
