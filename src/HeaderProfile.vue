@@ -55,6 +55,8 @@ const yearsOfLeadershipExperience = (
   (Date.now() - new Date('2020-04-01').getTime()) /
   (1000 * 60 * 60 * 24 * 365.25)
 ).toFixed();
+
+const phoneNumber = process.env.NETLIFY_APP_CONTEXT.PHONE_NUMBER;
 </script>
 
 <template>
@@ -69,7 +71,7 @@ const yearsOfLeadershipExperience = (
       <a href="mailto:vahidm1467@gmail.com" class="contacts-contact-info">
         <span class="material-symbols-outlined">mail</span><span>vahidm1467@gmail.com</span>
       </a>
-      <a href="tel:+447495192782" class="contacts-contact-info">
+      <a :href="'tel:' + phoneNumber" class="contacts-contact-info">
         <span class="material-symbols-outlined">call</span><span>+447495192782</span>
       </a>
     </div>
@@ -220,7 +222,11 @@ header {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48;
 }
 
 .summary {
