@@ -10,7 +10,7 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
     <div class="reputation">
       <span class="rep-number">7k+</span> <span>Reputation in StackOverFLow</span>
     </div>
-    <div class="badge">Angular bronze badge</div>
+    <div class="badge">Angular & Typescript bronze badge</div>
     <div class="tags print-hide">
       <span>Top</span>
       <div class="percent-wrapper">
