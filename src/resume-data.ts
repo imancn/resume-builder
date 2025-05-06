@@ -44,10 +44,10 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <li>Implemented and maintained minor features for the 'Campaign Management' APIs and Data Stream pipelines within the Search Ads project(an OpenRTB integration with CafeBazaar, serving as a Demand-Side Platform (DSP)).
 <li>developed the CafeBazaar Gateway service to publish +60 Millon users events from the CafeBazzar services to a Kafka topic.
 <li>built the CafeBazaar RTB EventStash to process +700 Million Events Per Day, synthesize new events, store statistical reports.
-<li>Designed and implement an ETL (Extract, Transform, Load) pipeline that aggregates and delivers statistics of +30,000 advertisers and publishers the BI team via a Kibana Dashboard. 
+<li>Designed and Initiated an ETL (Extract, Transform, Load) pipeline that aggregates and delivers statistics of +30,000 advertisers and publishers the BI team via a Kibana Dashboard. 
 <li>Created a scheduled email that provides a report on the financial margins of 6 types of ad networks types every 24 hours.
 <li>Conducted weekly technical coordination meetings with the team from CafeBazaar company.
-<li>Created a browser extension that provides statistics of Tapsell advertising zones on +18,000 websites.
+<li>Innovated a browser extension that provides statistics of Tapsell advertising zones on +18,000 websites.
 <li>Did technical support, fix reported bugs, and data corruption for 9 Services.
 </ul>`,
       },
@@ -66,7 +66,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         // <p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
         desc: `
 <ul>
-<li>Developed +40 APIs within the 'User Service' to handle users across entire projects in an SOA system as a team member.
+<li>Published +40 APIs within the 'User Service' to handle users across entire projects in an SOA system as a team member.
 <li>Improved APIs performance, reduced response time to 1% and provided Apache JMeter load test results for each API.
 <li>Wrote unit tests and integration tests by 87% branch coverage and 95% condition coverage for each API before developing them.
 <li>Wrote API documents for each APIs.
