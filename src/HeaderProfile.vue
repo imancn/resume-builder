@@ -14,7 +14,7 @@ interface SocialMedia {
 }
 
 const socialMedia: SocialMedia[] = [
-  { link: 'https://linktr.ee/imansoltani', icon: 'language', class: 'contacts-contact-info' },
+  { link: 'https://imansoltanij.ir', icon: 'language', class: 'contacts-contact-info' },
   {
     link: 'https://www.linkedin.com/in/imansoltani/',
     iconComponent: IconLinkedin,
@@ -53,7 +53,7 @@ const yearsOfExperience = (
 ).toFixed();
 
 // const phoneNumber = process.env.NETLIFY_PHONE_NUMBER;
-const phoneNumber = '+98 922 400 14 20';
+const phoneNumber = '+989224001420';
 </script>
 
 <template>
@@ -69,7 +69,7 @@ const phoneNumber = '+98 922 400 14 20';
         <span class="material-symbols-outlined">mail</span><span>iman.soltani.j@gmail.com</span>
       </a>
       <a :href="'tel:' + phoneNumber" class="contacts-contact-info">
-        <span class="material-symbols-outlined">call</span><span>+989224001420</span>
+        <span class="material-symbols-outlined">call</span><span>+98 922 400 1420</span>
       </a>
     </div>
 
