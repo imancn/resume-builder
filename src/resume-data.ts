@@ -20,10 +20,10 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         start: { month: '7', year: '2023' },
         desc: `
 <ul>
-<li>Designed and initiated a Spring Boot service that track and manage warehouse +6,000 staff users performance, calculates staff working velocity and detect operations bottle neck then alert in chanells.
-<li>Implemented a real-time monitoring service, which monitors +340,000 product items per day awaiting allocation on shelves.
-<li>Created Metabase dashboard to monitor flows and states of over 100 warehouse and fulfilments.
-<li>Fixed 7 critical bugs root cause and reduced 24% of SQA tickets.
+<li>Architected and spearheaded a Spring Boot service to quantify performance of 6,000+ warehouse staff, infer bottlenecks, and dispatch alerts across ops channels.
+<li>Engineered a real-time tracker overseeing 340K+ daily product items awaiting shelf allocation.
+<li>Curated Metabase dashboards to illuminate flow states across 100+ fulfillment centers.
+<li>Eradicated +10 critical bugs root causes, slashing SQA tickets by 24%.
 </ul>`,
       },
     ],
@@ -68,7 +68,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <ul>
 <li>Published +40 APIs within the 'User Service' to handle users across entire projects in an SOA system as a team member.
 <li>Improved APIs performance, reduced response time to 1% and provided Apache JMeter load test results for each API.
-<li>Wrote unit tests and integration tests by 87% branch coverage and 95% condition coverage for each API before developing them.
+<li>Wrote tests by 87% branch coverage and 95% condition coverage for each API before developing them.
 <li>Wrote API documents for each APIs.
 </ul>`,
       },
