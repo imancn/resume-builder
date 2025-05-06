@@ -3,7 +3,7 @@ import HeaderProfile from '@/HeaderProfile.vue';
 import WorkExperiences from '@/WorkExperiences.vue';
 import Education from '@/Education.vue';
 import SkillsList from '@/SkillsList.vue';
-import HonorsList from '@/HonorsList.vue';
+import HonorsList from '@/OtherSkillsList.vue';
 </script>
 
 <template>
@@ -20,7 +20,7 @@ import HonorsList from '@/HonorsList.vue';
           <section class="skills-list">
             <SkillsList />
           </section>
-          <section class="honors-list">
+          <section class="skills-list">
             <HonorsList />
           </section>
         </aside>

@@ -1,15 +1,4 @@
 <script setup lang="ts">
-import type { Skill } from '@/models/skill';
-import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
-
-const skills: Skill[] = [
-  { name: 'Java', since: 2019 },
-  { name: 'Spring Boot', since: 2020 },
-  { name: 'Apache Kafka', since: 2021 },
-  { name: 'MySQL', since: 2021 },
-  { name: 'Elastic Stack (ELK)', since: 2021 },
-  { name: 'MongoDB', since: 2021 },
-];
 
 // prettier-ignore
 const otherSkills: string[] = [
@@ -26,29 +15,12 @@ function calculateYears(year: number) {
 
 <template>
   <div class="skills-list-wrapper">
-    <h2 class="section-title">Skills</h2>
-    <ul class="skills-list">
-      <li v-for="s of skills" :key="s.name" class="skill">
-        <div class="skill-name">{{ s.name }}</div>
-        <a v-if="s.badge" :class="'badge badge-' + s.badge" :href="s.badgeLink" target="_blank">{{
-          s.badge
-        }}</a>
-        <div
-          v-if="s.topPercentileInStackoverflow"
-          class="top-percentile"
-          :title="`Top ${s.topPercentileInStackoverflow}% in StackOverFlow`"
-        >
-          Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
-          <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
-        </div>
-        <div class="skill-years">{{ calculateYears(s.since) }}+ Years</div>
-      </li>
-    </ul>
-    <!-- <ul class="other-skills">
+    <h2 class="section-title">Other Skills</h2>
+    <ul class="other-skills">
       <li v-for="s of otherSkills" :key="s">
         <span>{{ s }}</span>
       </li>
-    </ul> -->
+    </ul>
   </div>
 </template>
 

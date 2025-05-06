@@ -1,7 +1,8 @@
 import TapsellLogo from '@/assets/tapsell.png';
-import Mastermind from '@/assets/mastermind-logo.png';
-import Huma from '@/assets/humaforhealth_logo.jpeg';
-import Klassroom from '@/assets/klassroom.jpeg';
+import TitLogo from '@/assets/tit-logo.png';
+import Langujet from '@/assets/langujet-logo.webp';
+import Digikala from '@/assets/digikala-logo.jpg';
+import EscapingMoon from '@/assets/escaping-moon-logo.webp';
 import type { WorkExperienceModel } from '@/models/experience';
 
 // When I joined Huma, the frontend team was remote and disconnected. I brought the team together, established coding standards, implemented code review processes, and automated workflows. We managed to refactor the project and proactively improved the code style making it more consistent.
@@ -9,22 +10,20 @@ import type { WorkExperienceModel } from '@/models/experience';
 
 export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
-    icon: Huma,
-    company: 'Huma',
-    country: 'London, UK',
+    icon: Digikala,
+    company: 'Digikala',
+    country: 'Tehran, Iran',
     type: 'full-time',
     positions: [
       {
-        title: 'Lead Frontend Engineer',
-        start: { month: '11', year: '2022' },
+        title: 'Senior Software Engineer',
+        start: { month: '7', year: '2023' },
         desc: `
 <ul>
-<li>Unified the remote and disconnected frontend teams and Led a team of 15-20 frontend engineers</li>
-<li>Established CI/CD, code linting and integrated testing using ESLint, Stylelint, SonarCube, Jest, Storybook, and Chromatic. Reduced staging bugs by 60%, and CI time by 86%</li>
-<li>Achieved a 20% decrease in bundle size by removing 10 dependencies, optimising configurations and optimising assets</li>
-<li>Crafted 10+ pages of coding guidelines and process docs and established personalised growth roadmaps</li>
-<li>Managed 3+ frontend React and Angular Typescript mono-repository projects, including internal NPM packages</li>
-<li>Engineered an automated workflow, reducing task completion time by 50%, handling development, QA, and deployment</li>
+<li>Designed and developed a Spring Boot service that track and manage warehouse +6,000 staff users performance, calculates staff working velocity and detect operations bottle neck then alert in chanells.
+<li>Implemented a real-time monitoring service, which monitors +340,000 product items per day awaiting allocation on shelves.
+<li>Created Metabase dashboard to monitor flows and states of over 100 warehouse and fulfilments.
+<li>Fixed 7 critical bugs root cause and reduced 24% of SQA tickets.
 </ul>`,
       },
     ],
@@ -36,79 +35,71 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
     type: 'full-time',
     positions: [
       {
-        title: 'Director of Technical Operations',
-        start: { month: '3', year: '2022' },
-        end: { month: '9', year: '2022' },
+        title: 'Senior Software Engineer',
+        start: { month: '4', year: '2021' },
+        end: { month: '7', year: '2023' },
         // <p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
         desc: `
 <ul>
-<li>Facilitated technical operations including onboarding, communication, knowledge sharing, code quality, and handover</li>
-<li>Directed tech teams in workflow, communication, and documentation automating 10+ complex internal processes</li>
-<li>Created CLI tools and chat bots with Node.js and implemented CI/CD pipelines</li>
+<li>Implemented and maintained minor features for the 'Campaign Management' APIs and Data Stream pipelines within the Search Ads project(an OpenRTB integration with CafeBazaar, serving as a Demand-Side Platform (DSP)).
+<li>developed the "CafeBazaar Gateway" to publish +60 Millon users events from the CafeBazzar services to a Kafka topic.
+<li>built the "CafeBazaar RTB Event Stash" to process +700 Million Events Per Day, synthesize new events, store statistical reports.
+<li>Designed and developed an ETL (Extract, Transform, Load) pipeline that aggregates and delivers statistics of +30,000 advertisers and publishers the BI team via a Kibana Dashboard. 
+<li>Created a scheduled email that provides a report on the financial margins of 6 types of ad networks types every 24 hours.
+<li>Conducted weekly technical coordination meetings with the team from CafeBazaar company.
+<li>Developed a browser extension that provides statistics of Tapsell advertising zones on +18,000 websites.
+<li>Did technical support, fix reported bugs, and data corruption for 9 Services.
 </ul>`,
       },
+    ],
+  },
+  {
+    icon: TitLogo,
+    company: 'Tourism Bank',
+    country: 'Iran',
+    type: 'full-time',
+    positions: [
       {
-        title: 'Frontend Chapter Lead',
-        start: { month: '7', year: '2019' },
-        end: { month: '2', year: '2022' },
-        // <p>I joined Tapsell as a junior front-end developer and as the company was growing I managed to gain trust and create a front-end chapter (we were only 2 front-end developers at the time) later by growing my team I had a huge impact on the quality of work in front-end teams of Tapsell.</p>
+        title: 'Junior Backend Developer',
+        start: { month: '1', year: '2020' },
+        end: { month: '4', year: '2021' },
+        // <p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
         desc: `
 <ul>
-<li>Led the frontend chapter of 20+ Angular, React, and Vue web developers in more than 5 products working as agile teams</li>
-<li>Conducted interviews and hired 10+ frontend engineers and coached 10+ interns</li>
-<li>Maintained 10+ frontend (React, Angular, Vue 3 and Typescript) SSR, PWA, and complex analytical dashboards</li>
-<li>Spearheaded the development of a full-featured Angular library for internal design system including an SSO platform</li>
-</ul>
-`,
-        // <p>Our front-end developers were working in separate teams without any interactions. By conducting weekly knowledge-sharing meetings and cross-team code review sessions, I was able to create a connected and targeted team. Besides, by creating a shared mono-repo library not only did we skip a lot of repeated work, but also we had more interactions as we were all working on the same project.</p
+<li>Developed +40 APIs within the 'User Service' to handle users across entire projects in an SOA system as a team member.
+<li>Improved APIs performance, reduced response time to 1% and provided Apache JMeter load test results for each API.
+<li>Wrote unit tests and integration tests by 87% branch coverage and 95% condition coverage for each API before developing them.
+<li>Wrote API documents for each APIs.
+</ul>`,
       },
+    ],
+  },
+  {
+    icon: Langujet,
+    company: 'Langujet',
+    country: 'France',
+    type: 'part-time remote',
+    hideInResume: true,
+    positions: [
       {
-        title: 'Senior Frontend Engineer',
-        start: { month: '10', year: '2017' },
+        title: 'Co Founder',
+        start: { month: '1', year: '2023' },
+        desc: `<p>Developing a platform name Lngujet to improving users language skills.</p>`,
+      },
+    ],
+  },
+  {
+    icon: EscapingMoon,
+    company: 'Escaping Moon Game',
+    country: 'Tehran, Iran',
+    type: 'self employed',
+    hideInResume: true,
+    positions: [
+      {
+        title: 'Software Engineer',
+        start: { month: '6', year: '2019' },
         end: { month: '12', year: '2019' },
-        // <p>I worked in 3 different teams, designed UIs, implemented front-end projects from scratch, and hired developers</p>
-        desc: `
-<ul>
-<li>Designed the UI and implemented 6 analytical Angular and React data visualisation panels</li>
-<li>Developed 3 SSG documentation platforms with React + Gatsby and 2 ad-serving SDKs using Webpack + Svelte</li>
-<li>Drafted testing projects, Interviewed and mentored 5 front-end interns in React and Angular</li>
-<li>Set up full CI and tooling for linting and deployment using GitLab CI, ESLint, and Stylelint for 10+ frontend projects</li>
-</ul>`,
-      },
-    ],
-  },
-  {
-    icon: Mastermind,
-    company: 'Teetap',
-    country: 'Canada',
-    type: 'part-time freelance',
-    hideInResume: true,
-    positions: [
-      {
-        title: 'Flutter Developer',
-        start: { month: '2', year: '2020' },
-        desc: `
-        <p>A small team of friends working on two Flutter mobile games:</p>
-`,
-        // <ul>
-        // <li>Mastermind Pro: a game based on the classic Mastermind</li>
-        // <li>Abalone: an Abalone game for Android and iOS</li>
-        // </ul>
-      },
-    ],
-  },
-  {
-    icon: Klassroom,
-    company: 'Klassroom',
-    country: 'Canada',
-    type: 'contract remote',
-    hideInResume: true,
-    positions: [
-      {
-        title: 'Senior Frontend Engineer',
-        start: { month: '6', year: '2020' },
-        end: { month: '12', year: '2020' },
-        desc: `<ul><li>Developed two LMS panels with Angular with custom internal design system</li></ul>`,
+        desc: `<ul><li>Developed a story based mini game.</li></ul>`,
       },
     ],
   },

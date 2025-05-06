@@ -14,65 +14,62 @@ interface SocialMedia {
 }
 
 const socialMedia: SocialMedia[] = [
-  { link: 'https://vahid-mohammadi.ir', icon: 'language', class: 'contacts-contact-info' },
+  { link: 'https://linktr.ee/imansoltani', icon: 'language', class: 'contacts-contact-info' },
   {
-    link: 'https://www.linkedin.com/in/vahidmohammadi/',
+    link: 'https://www.linkedin.com/in/imansoltani/',
     iconComponent: IconLinkedin,
     ariaLabel: 'LinkedIn',
     class: 'contacts-social-media',
   },
+  // {
+  //   link: 'https://stackoverflow.com/users/1889607/vahid/',
+  //   iconComponent: IconStackoverflow,
+  //   ariaLabel: 'StackOverFlow',
+  //   class: 'contacts-social-media',
+  // },
+  // {
+  //   link: 'https://vmoh.medium.com/',
+  //   iconComponent: IconMedium,
+  //   ariaLabel: 'Medium articles',
+  //   class: 'contacts-social-media',
+  // },
   {
-    link: 'https://stackoverflow.com/users/1889607/vahid/',
-    iconComponent: IconStackoverflow,
-    ariaLabel: 'StackOverFlow',
-    class: 'contacts-social-media',
-  },
-  {
-    link: 'https://vmoh.medium.com/',
-    iconComponent: IconMedium,
-    ariaLabel: 'Medium articles',
-    class: 'contacts-social-media',
-  },
-  {
-    link: 'https://github.com/vmohir',
+    link: 'https://github.com/imancn',
     iconComponent: IconGithub,
     ariaLabel: 'GitHub',
     class: 'contacts-social-media',
   },
-  {
-    link: 'https://dribbble.com/vmoh_ir',
-    iconComponent: IconDribbble,
-    ariaLabel: 'Dribbble Designs',
-    class: 'contacts-social-media',
-  },
+  // {
+  //   link: 'https://dribbble.com/vmoh_ir',
+  //   iconComponent: IconDribbble,
+  //   ariaLabel: 'Dribbble Designs',
+  //   class: 'contacts-social-media',
+  // },
 ];
 
 const yearsOfExperience = (
-  (Date.now() - new Date('2017-05-01').getTime()) /
-  (1000 * 60 * 60 * 24 * 365.25)
-).toFixed();
-const yearsOfLeadershipExperience = (
-  (Date.now() - new Date('2020-04-01').getTime()) /
+  (Date.now() - new Date('2020-01-01').getTime()) /
   (1000 * 60 * 60 * 24 * 365.25)
 ).toFixed();
 
-const phoneNumber = process.env.NETLIFY_PHONE_NUMBER;
+// const phoneNumber = process.env.NETLIFY_PHONE_NUMBER;
+const phoneNumber = '+98 922 400 14 20';
 </script>
 
 <template>
   <header>
     <div class="avatar-wrapper">
-      <img alt="Avatar" class="avatar" src="./assets/avatar.jpeg" width="100" height="100" />
+      <img alt="Avatar" class="avatar" src="./assets/avatar.jpg" width="100" height="100" />
     </div>
 
-    <h1 class="resume-name">Vahid Mohammadi</h1>
+    <h1 class="resume-name">Iman Soltani Jahangirnia</h1>
 
     <div class="contact-info">
-      <a href="mailto:vahidm1467@gmail.com" class="contacts-contact-info">
-        <span class="material-symbols-outlined">mail</span><span>vahidm1467@gmail.com</span>
+      <a href="mailto:iman.soltani.j@gmail.com" class="contacts-contact-info">
+        <span class="material-symbols-outlined">mail</span><span>iman.soltani.j@gmail.com</span>
       </a>
       <a :href="'tel:' + phoneNumber" class="contacts-contact-info">
-        <span class="material-symbols-outlined">call</span><span>+447495192782</span>
+        <span class="material-symbols-outlined">call</span><span>+989224001420</span>
       </a>
     </div>
 
@@ -85,10 +82,7 @@ const phoneNumber = process.env.NETLIFY_PHONE_NUMBER;
 
     <div class="summary">
       <p>
-        Front-end engineer with {{ yearsOfExperience }} years of experience, including
-        {{ yearsOfLeadershipExperience }} years as a leader in enterprise companies, with a keen
-        focus on UI/UX design and mobile app development. Angular contributor and open-source
-        enthusiast.
+        Software Engineer with {{ yearsOfExperience }} years of experience, with a keen focus on proccessing large data streams, designing and developing APIs, writing unit tests and documentation.
       </p>
     </div>
   </header>
