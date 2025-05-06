@@ -20,7 +20,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         start: { month: '7', year: '2023' },
         desc: `
 <ul>
-<li>Designed and developed a Spring Boot service that track and manage warehouse +6,000 staff users performance, calculates staff working velocity and detect operations bottle neck then alert in chanells.
+<li>Designed and initiated a Spring Boot service that track and manage warehouse +6,000 staff users performance, calculates staff working velocity and detect operations bottle neck then alert in chanells.
 <li>Implemented a real-time monitoring service, which monitors +340,000 product items per day awaiting allocation on shelves.
 <li>Created Metabase dashboard to monitor flows and states of over 100 warehouse and fulfilments.
 <li>Fixed 7 critical bugs root cause and reduced 24% of SQA tickets.
@@ -44,7 +44,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <li>Implemented and maintained minor features for the 'Campaign Management' APIs and Data Stream pipelines within the Search Ads project(an OpenRTB integration with CafeBazaar, serving as a Demand-Side Platform (DSP)).
 <li>developed the CafeBazaar Gateway service to publish +60 Millon users events from the CafeBazzar services to a Kafka topic.
 <li>built the CafeBazaar RTB EventStash to process +700 Million Events Per Day, synthesize new events, store statistical reports.
-<li>Designed and Initiated an ETL (Extract, Transform, Load) pipeline that aggregates and delivers statistics of +30,000 advertisers and publishers the BI team via a Kibana Dashboard. 
+<li>Designed and implement an ETL (Extract, Transform, Load) pipeline that aggregates and delivers statistics of +30,000 advertisers and publishers the BI team via a Kibana Dashboard. 
 <li>Created a scheduled email that provides a report on the financial margins of 6 types of ad networks types every 24 hours.
 <li>Conducted weekly technical coordination meetings with the team from CafeBazaar company.
 <li>Innovated a browser extension that provides statistics of Tapsell advertising zones on +18,000 websites.
