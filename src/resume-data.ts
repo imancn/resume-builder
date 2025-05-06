@@ -67,7 +67,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         desc: `
 <ul>
 <li>Published and maintained 40+ APIs in the 'User Service' to support user management across a distributed SOA ecosystem.
-<li>Optimized API performance, cutting response times by up to 99%, and validated improvements with Apache JMeter load testing.
+<li>Optimized API performance, cutting response times by to 99%, and validated improvements with Apache JMeter load testing.
 <li>Authored comprehensive test suites, achieving 87% branch and 95% condition coverage pre-development.
 <li>Documented all APIs thoroughly, ensuring clarity and ease of integration for internal teams.
 </ul>`,
