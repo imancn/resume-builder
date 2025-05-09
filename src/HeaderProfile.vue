@@ -127,6 +127,15 @@ header {
   }
 }
 
+@media print {
+  header {
+    grid-template-areas:
+      'name contacts social'
+      'summary summary summary';
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
 .avatar-wrapper {
   grid-area: avatar;
   margin-inline-end: 1rem;
@@ -134,6 +143,10 @@ header {
   overflow: hidden;
   border-radius: 4px;
   align-self: start;
+
+  @media print {
+    display: none;
+  }
 
   &:after {
     content: '';
