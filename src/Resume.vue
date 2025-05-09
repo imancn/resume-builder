@@ -18,13 +18,13 @@ import LinkedInBadge from '@/LinkedInBadge.vue';
           <Education />
         </article>
         <aside class="aside">
-          <LinkedInBadge />
           <section class="skills-list">
             <SkillsList />
           </section>
           <section class="skills-list">
             <HonorsList />
           </section>
+          <LinkedInBadge />
         </aside>
       </div>
     </main>
