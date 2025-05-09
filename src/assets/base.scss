@@ -60,7 +60,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   margin: 0;
 }
 
@@ -76,6 +76,14 @@ body {
   font-family: var(--font-text);
 }
 
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
 }
@@ -84,6 +92,24 @@ a {
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container, .resume-wrapper, .main-card, .content {
+  max-width: 100%;
+  overflow-x: hidden;
+  word-break: break-word;
+}
+
+/* Handle long text or unbreakable items */
+p, li, span, div {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
 
 .section-title {
   font-family: var(--font-title);

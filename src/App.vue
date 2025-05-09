@@ -16,6 +16,11 @@ import Resume from '@/Resume.vue';
   @media print {
     padding: 0;
   }
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 </style>
