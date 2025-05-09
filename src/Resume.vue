@@ -4,6 +4,7 @@ import WorkExperiences from '@/WorkExperiences.vue';
 import Education from '@/Education.vue';
 import SkillsList from '@/SkillsList.vue';
 import HonorsList from '@/OtherSkillsList.vue';
+import LinkedInBadge from '@/LinkedInBadge.vue';
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import HonorsList from '@/OtherSkillsList.vue';
           <Education />
         </article>
         <aside class="aside">
+          <LinkedInBadge />
           <section class="skills-list">
             <SkillsList />
           </section>
