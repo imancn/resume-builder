@@ -5,9 +5,6 @@ import Digikala from '@/assets/digikala-logo.jpg';
 import EscapingMoon from '@/assets/escaping-moon-logo.webp';
 import type { WorkExperienceModel } from '@/models/experience';
 
-// When I joined Huma, the frontend team was remote and disconnected. I brought the team together, established coding standards, implemented code review processes, and automated workflows. We managed to refactor the project and proactively improved the code style making it more consistent.
-// "When I joined Huma, I unified the previously remote and disconnected frontend team by establishing cohesive coding standards, implementing robust code review processes, and automating workflows. This resulted in a successful project refactoring and proactive improvement of code style consistency.
-
 export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
     icon: Digikala,
@@ -16,7 +13,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
     type: 'full-time',
     positions: [
       {
-        title: 'Senior Software Engineer',
+        title: 'Software Engineer',
         start: { month: '7', year: '2023' },
         desc: `
 <ul>
@@ -35,10 +32,9 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
     type: 'full-time',
     positions: [
       {
-        title: 'Senior Software Engineer',
+        title: 'Software Engineer',
         start: { month: '4', year: '2021' },
         end: { month: '7', year: '2023' },
-        // <p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
         desc: `
 <ul>
 <li>Developed the CafeBazaar Discovery Ad OpenRTB DSP integration services such as Gateway, EventStash to funnel event streams from 60M+ users into Kafka topics and to distill 700M+ daily events, synthesize signals, and archive analytics.
@@ -61,7 +57,6 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         title: 'Backend Developer',
         start: { month: '1', year: '2020' },
         end: { month: '4', year: '2021' },
-        // <p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
         desc: `
 <ul>
 <li>Published and maintained 40+ APIs in the 'User Service' to support user management in a distributed SOA ecosystem, with thorough documentation to ensure seamless internal integration.

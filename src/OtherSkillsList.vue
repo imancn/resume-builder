@@ -2,11 +2,56 @@
 
 // prettier-ignore
 const otherSkills: string[] = [
-  'Kotlin', 'Spring Data', 'Hibernate', 'JPA', 'Spring Security', 'JWT', 'PHP', 'Symfony', 'PostgreSQL', 'Cassandra', 'Oracle Database',
-  'Data Structures', 'Algorithms', 'Design Patterns', 'AAA', 'TDD', 'Macroservices', 'SOA', 'Monolithic', 'OOP',
-  'Reactive Programming', 'Stream Processing', 'Kafka Streams', 'Elasticsearch', 'Kibana', 'Mockito', 
-  'JUnit', 'Apache JMeter', 'HTTP', 'RESTful APIs', 'Grpc', 'JSON', 'Protobuf', 'CSV', 'XML', 'YAML', 'HTML', 'CSS', 'MD', 'Bash', 'CI/CD', 'Docker', 'Git', 'Swagger'
-  // , 'OpenAPI'
+  // Software Developement Paradigm
+  'Macroservices',
+  'SOA',
+  'Monolithic',
+  'OOP',
+  'Data Structures',
+  'Algorithms',
+  'Design Patterns',
+  'Reactive Programming',
+  'Stream Processing',
+  'AAA',
+  'TDD',
+  /// Programming Languages - Frameworks - Libraries
+  'Spring Data',
+  'Hibernate',
+  'JPA',
+  'Spring Security',
+  'Mockito',
+  'JUnit',
+  'PHP',
+  /// DBMS
+  'MySQL',
+  'PostgreSQL',
+  'Oracle DBMS',
+  'Cassandra',
+  'Elasticsearch',
+  'Kibana',
+  /// Software Tools - Software Services
+  'Kafka Streams',
+  'Apache JMeter',
+  /// Data Serialization - Protocols
+  'JWT',
+  'HTTP',
+  'RESTful APIs',
+  'gRpc',
+  'JSON',
+  'Protobuf',
+  'CSV',
+  'XML',
+  'YAML',
+  'HTML',
+  'MD',
+  /// DevOps
+  'Bash CLI',
+  'CI/CD',
+  'Docker',
+  'Git',
+  /// Documention
+  // 'OpenAPI',
+  'Swagger'
 ];
 
 function calculateYears(year: number) {
@@ -31,24 +76,29 @@ function calculateYears(year: number) {
     break-inside: avoid;
   }
 }
+
 .skills-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .skill {
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
 }
+
 .skill-name {
   font-weight: 600;
   font-family: var(--font-title);
 }
+
 .skill-years {
   margin-inline-start: auto;
 }
+
 .top-percentile {
   margin-inline-start: 0.75rem;
   //margin-inline-start: auto;
@@ -67,6 +117,7 @@ function calculateYears(year: number) {
     margin-inline-start: 0.25rem;
   }
 }
+
 .badge {
   padding: 0.25rem;
   line-height: 11px;
@@ -77,6 +128,7 @@ function calculateYears(year: number) {
   margin-inline-start: 0.5rem;
   cursor: pointer;
   white-space: nowrap;
+
   &::before {
     content: '';
     vertical-align: 1px;
@@ -87,6 +139,7 @@ function calculateYears(year: number) {
     background-color: #666666;
     display: inline-block;
   }
+
   &.badge-bronze {
     &::before {
       background: #c27300;
@@ -104,7 +157,8 @@ function calculateYears(year: number) {
   line-height: 12px;
   font-family: var(--font-title);
   color: var(--text-2);
-  > li {
+
+  >li {
     padding: 0;
     margin: 0;
   }

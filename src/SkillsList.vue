@@ -5,19 +5,12 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 const skills: Skill[] = [
   { name: 'Java', since: 2019 },
   { name: 'Spring Boot', since: 2020 },
+  { name: 'SQL Databases', since: 2020},
+  // { name: 'NoSQL Databases', since: 2020},
+  { name: 'Kotlin', since: 2021},
   { name: 'Apache Kafka', since: 2021 },
-  { name: 'MySQL', since: 2021 },
   { name: 'Elastic Stack (ELK)', since: 2021 },
   { name: 'MongoDB', since: 2021 },
-];
-
-// prettier-ignore
-const otherSkills: string[] = [
-  'Kotlin', 'Spring Data', 'Hibernate', 'JPA', 'Spring Security', 'JWT', 'PHP', 'Symfony', 'PostgreSQL', 'Cassandra', 'Oracle Database',
-  'Data Structures', 'Algorithms', 'Design Patterns', 'AAA', 'TDD', 'Macroservices', 'SOA', 'Monolithic', 'OOP',
-  'Reactive Programming', 'Stream Processing', 'Kafka Streams', 'Elasticsearch', 'Kibana', 'Mockito', 
-  'JUnit', 'Apache JMeter', 'HTTP', 'RESTful APIs', 'Grpc', 'JSON', 'Protobuf', 'CSV', 'XML', 'YAML', 'HTML', 'CSS', 'MD', 'Bash', 'CI/CD', 'Docker', 'Git', 'Swagger'
-  // , 'OpenAPI'
 ];
 
 function calculateYears(year: number) {
