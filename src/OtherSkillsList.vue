@@ -26,9 +26,10 @@ const otherSkills: string[] = [
   /// Software Tools - Software Services
   'Kafka Streams',
   'Kafka Connect',
-  'Debezium CDC Connector', 
+  'Debezium',
+  'Apache Flink',
+  'CDC Connector', 
   'Sink Connector',
-  'Apache Flink SQL',
   'Apache JMeter',
   /// Data Serialization - Protocols
   'JWT',
