@@ -26,11 +26,11 @@ const otherSkills: string[] = [
   'Min.io',
   /// Software Tools - Software Services
   'Kafka Streams',
+  'Apache Flink',
   'Kafka Connect',
   'Debezium',
-  'Apache Flink',
-  'CDC Connector', 
-  'Sink Connector',
+  'CDC', 
+  'Sink',
   'JMeter',
   /// Data Serialization - Protocols
   'JWT',
