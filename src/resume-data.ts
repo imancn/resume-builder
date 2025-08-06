@@ -2,11 +2,27 @@ import TapsellLogo from '@/assets/tapsell.png';
 import TitLogo from '@/assets/tit-logo.png';
 import Langujet from '@/assets/langujet-logo.webp';
 import Digikala from '@/assets/digikala-logo.jpg';
+import Invex from '@/assets/invex-logo.webp';
 import EscapingMoon from '@/assets/escaping-moon-logo.webp';
 import type { WorkExperienceModel } from '@/models/experience';
 
 export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
+    icon: Invex,
+    company: 'Invex',
+    country: 'Tehran, Iran',
+    type: 'full-time',
+    positions: [
+      {
+        title: 'Data Engineer',
+        start: { month: '4', year: '2025' },
+        desc: `
+<ul>
+<li>Built and open-sourced production Data Warehouse Stack for real-time CDC from PostgreSQL to ClickHouse, enabling unified analytics across SOA microservices.
+</ul>`,
+      },
+    ],
+  },{
     icon: Digikala,
     company: 'Digikala',
     country: 'Tehran, Iran',
@@ -15,11 +31,12 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
       {
         title: 'Software Engineer',
         start: { month: '7', year: '2023' },
+        end: { month: '4', year: '2025' },
         desc: `
 <ul>
 <li>Led a team of 3 to architect and deliver a Spring Boot service ahead of deadline, quantifying performance for 6,000+ warehouse staff, identifying bottlenecks, and triggering alerts across operational channels.
 <li>Implemented a real-time tracker overseeing 340K+ daily product items awaiting shelf allocation.
-<li>Created Metabase dashboards to illuminate flow states across 100+ fulfillment centers.
+<li>Created Metabase dashboards to illuminate flow states across 3 fulfillment centers and +50 hub.
 <li>Fixed +10 critical bugs root causes, caused SQA tickets reduces by 24%.
 </ul>`,
       },
@@ -59,7 +76,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         end: { month: '4', year: '2021' },
         desc: `
 <ul>
-<li>Published and maintained 40+ APIs in the 'User Service' to support user management in a distributed SOA ecosystem, with thorough documentation to ensure seamless internal integration.
+<li>Published and maintained 16 APIs in the 'User Service' to support user management in a distributed SOA ecosystem, with thorough documentation to ensure seamless internal integration.
 <li>Boosted API performance with up to 99% faster response times, validated via Apache JMeter load testing; developed comprehensive test suites achieving 87% branch and 95% condition coverage pre-development.
 </ul>`,
       },
