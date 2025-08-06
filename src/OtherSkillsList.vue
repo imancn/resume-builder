@@ -25,8 +25,10 @@ const otherSkills: string[] = [
   'Kibana',
   /// Software Tools - Software Services
   'Kafka Streams',
-  'Kafka Connect [Debezium CDC, Sink Connect]',
-  'Apache Flink',
+  'Kafka Connect',
+  'Debezium CDC Connector', 
+  'Sink Connector',
+  'Apache Flink SQL',
   'Apache JMeter',
   /// Data Serialization - Protocols
   'JWT',

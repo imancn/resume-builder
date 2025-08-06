@@ -10,7 +10,7 @@ const skills: Skill[] = [
   { name: 'Kotlin', since: 2021},
   { name: 'Apache Kafka', since: 2021 },
   { name: 'Elastic Stack (ELK)', since: 2021 },
-  { name: 'MongoDB', since: 2021 },
+  // { name: 'MongoDB', since: 2021 },
 ];
 
 function calculateYears(year: number) {
