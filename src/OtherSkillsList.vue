@@ -23,6 +23,7 @@ const otherSkills: string[] = [
   'Cassandra',
   'Elasticsearch',
   'Kibana',
+  'Min.io',
   /// Software Tools - Software Services
   'Kafka Streams',
   'Kafka Connect',
@@ -30,11 +31,10 @@ const otherSkills: string[] = [
   'Apache Flink',
   'CDC Connector', 
   'Sink Connector',
-  'Apache JMeter',
+  'JMeter',
   /// Data Serialization - Protocols
   'JWT',
   'HTTP',
-  'RESTful APIs',
   'gRpc',
   'Protobuf',
   /// DevOps
