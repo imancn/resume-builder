@@ -4,8 +4,8 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 
 const skills: Skill[] = [
   { name: 'Java', since: 2019 },
+  { name: 'MySQL', since: 2020},
   { name: 'Spring Boot', since: 2020 },
-  { name: 'SQL Databases', since: 2020},
   // { name: 'NoSQL Databases', since: 2020},
   { name: 'Kotlin', since: 2021},
   { name: 'Apache Kafka', since: 2021 },
