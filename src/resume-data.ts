@@ -15,7 +15,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
     positions: [
       {
         title: 'Data Engineer',
-        start: { month: '4', year: '2025' },
+        start: { month: '5', year: '2025' },
         desc: `
 <ul>
 <li>Built and open-sourced production Data Warehouse Stack using ClickHouse, Apache Kafka Connect (CDC, Sink), Apache Flink SQL, to enabling unified real-time analytics across SOA microservices.
@@ -31,7 +31,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
       {
         title: 'Software Engineer',
         start: { month: '7', year: '2023' },
-        end: { month: '4', year: '2025' },
+        end: { month: '5', year: '2025' },
         desc: `
 <ul>
 <li>Led a team of 3 to architect and deliver a Spring Boot service ahead of deadline, quantifying performance for 6,000+ warehouse staff, identifying bottlenecks, and triggering alerts across operational channels.
@@ -55,7 +55,7 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         desc: `
 <ul>
 <li>Developed the CafeBazaar Discovery Ad OpenRTB DSP integration services such as Gateway, EventStash to funnel event streams from 60M+ users into Kafka topics and to distill 700M+ daily events, synthesize signals, and archive analytics.
-<li>Devised and deployed an ETL pipeline that ingested advertising data, transformed it into structured analytics, and loaded it into a time-series database enabling tracking and trend analysis for 30K+ advertisers and publishers via interactive Kibana dashboards.
+<li>Devised and deployed an Unified ETL pipeline that ingested advertising data, transformed it into structured analytics, and loaded it into a ElasticSerach, enabling tracking and trend analysis for 30K+ users via Kibana dashboards.
 <li>Automated daily financial margin reports across 6 Ad Network types through scheduled email delivery.
 <li>Chaired weekly sync-ups with the CafeBazaar engineering team to align cross-org tech initiatives.
 <li>Maitained 'Campaign Management' APIs and Data Stream pipelines for the CafeBazaar Search Ads project
