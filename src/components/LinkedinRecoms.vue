@@ -15,7 +15,7 @@ import IconLinkedin from '@/components/icons/IconLinkedin.vue';
   </a>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .linkedin-recoms {
   display: flex;
   align-items: center;

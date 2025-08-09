@@ -92,7 +92,7 @@ function getMonthName(monthNumber: string) {
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .work-experience {
   display: grid;
   grid-template-areas: 'icon title time' 'icon metadata time' 'empty desc desc';
@@ -200,7 +200,7 @@ function getMonthName(monthNumber: string) {
   }
 }
 </style>
-<style lang="scss">
+<style>
 .work-experience .job-desc {
   > p:not(:last-child) {
     margin-block-end: 0.75rem;

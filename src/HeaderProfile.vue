@@ -14,7 +14,11 @@ interface SocialMedia {
 }
 
 const socialMedia: SocialMedia[] = [
-  { link: 'https://vahid-mohammadi.ir', icon: 'language', class: 'contacts-contact-info' },
+  {
+    link: 'https://vahid-mohammadi.ir',
+    icon: 'language',
+    class: 'contacts-contact-info',
+  },
   {
     link: 'https://www.linkedin.com/in/vahidmohammadi/',
     iconComponent: IconLinkedin,
@@ -56,74 +60,86 @@ const yearsOfLeadershipExperience = (
   (1000 * 60 * 60 * 24 * 365.25)
 ).toFixed();
 
-const PHONE_NUMBER = process.env.NETLIFY_PHONE_NUMBER;
-const EMAIL_ADDRESS = process.env.NETLIFY_EMAIL_ADDRESS;
+const PHONE_NUMBER = import.meta.env.NETLIFY_PHONE_NUMBER;
+const EMAIL_ADDRESS = import.meta.env.NETLIFY_EMAIL_ADDRESS;
 </script>
 
 <template>
   <header>
     <div class="avatar-wrapper">
-      <img alt="Avatar" class="avatar" src="./assets/avatar.jpeg" width="100" height="100" />
+      <img
+        alt="Avatar"
+        class="avatar"
+        src="./assets/avatar.jpeg"
+        width="100"
+        height="100"
+      />
     </div>
 
     <h1 class="resume-name">Vahid Mohammadi</h1>
 
     <div class="contact-info">
       <a :href="'mailto:' + EMAIL_ADDRESS" class="contacts-contact-info">
-        <span class="material-symbols-outlined">mail</span><span>{{ EMAIL_ADDRESS }}</span>
+        <span class="material-symbols-outlined">mail</span
+        ><span>{{ EMAIL_ADDRESS }}</span>
       </a>
       <a :href="'tel:' + PHONE_NUMBER" class="contacts-contact-info">
-        <span class="material-symbols-outlined">call</span><span>{{ PHONE_NUMBER }}</span>
+        <span class="material-symbols-outlined">call</span
+        ><span>{{ PHONE_NUMBER }}</span>
       </a>
     </div>
 
     <div class="social-media">
-      <a v-for="s of socialMedia" :key="s.link" :href="s.link" :class="s.class" target="_blank">
-        <span v-if="s.icon" class="material-symbols-outlined">{{ s.icon }}</span>
+      <a
+        v-for="s of socialMedia"
+        :key="s.link"
+        :href="s.link"
+        :class="s.class"
+        target="_blank"
+      >
+        <span v-if="s.icon" class="material-symbols-outlined">{{
+          s.icon
+        }}</span>
         <span v-else><component v-bind:is="s.iconComponent"></component></span>
       </a>
     </div>
 
     <div class="summary">
       <p>
-        Front-end engineer with {{ yearsOfExperience }} years of experience, including
-        {{ yearsOfLeadershipExperience }} years as a leader in enterprise companies, with a keen
-        focus on UI/UX design and mobile app development. Angular contributor and open-source
-        enthusiast.
+        Front-end engineer with {{ yearsOfExperience }} years of experience,
+        including {{ yearsOfLeadershipExperience }} years as a leader in
+        enterprise companies, with a keen focus on UI/UX design and mobile app
+        development. Angular contributor and open-source enthusiast.
       </p>
     </div>
   </header>
 </template>
 
-<style scoped lang="scss">
-$size-lg: 1024px;
-$size-md: 800px;
-$size-sm: 540px;
-$size-xs: 500px;
+<style scoped>
 header {
   display: grid;
   grid-template-areas: 'avatar name contacts social' 'avatar summary summary summary';
   grid-template-rows: auto 1fr;
   grid-template-columns: auto auto 1fr;
   margin: 0 0 1.5rem;
-  @media (max-width: $size-lg) {
+  @media (max-width: 1024px) {
     grid-template-areas: 'avatar name contacts contacts' 'avatar summary summary social';
     grid-template-rows: auto 1fr;
     grid-template-columns: auto auto 1fr auto;
   }
-  @media (max-width: $size-md) {
+  @media (max-width: 800px) {
     grid-template-areas: 'avatar name social' 'avatar contacts contacts' 'avatar summary summary';
     grid-template-rows: auto auto 1fr;
     grid-template-columns: auto auto 1fr;
     margin: 0 0 1rem;
   }
-  @media (max-width: $size-sm) {
+  @media (max-width: 540px) {
     grid-template-areas: 'avatar name' 'avatar contacts' 'avatar social' 'summary summary';
     grid-template-rows: auto auto auto 1fr;
     grid-template-columns: auto 1fr;
     margin: 0 0 0.5rem;
   }
-  @media (max-width: $size-xs) {
+  @media (max-width: 500px) {
     grid-template-areas: 'avatar name' 'avatar social' 'contacts contacts' 'summary summary';
     grid-template-rows: auto auto auto 1fr;
     grid-template-columns: auto 1fr;
@@ -156,7 +172,7 @@ header {
     display: block;
     border-radius: 4px;
     position: relative;
-    @media (max-width: $size-md) {
+    @media (max-width: 800px) {
       width: 64px;
       height: 64px;
     }
@@ -188,29 +204,29 @@ header {
 .social-media {
   grid-area: social;
   gap: 0.6rem;
-  @media (min-width: ($size-lg + 1px)) {
+  @media (min-width: 1025px) {
     margin-inline-start: 0.5rem;
   }
-  @media (max-width: $size-lg) {
+  @media (max-width: 1024px) {
     margin-inline-start: 1rem;
     align-self: start;
     margin-top: 0.5rem;
     flex-wrap: wrap;
   }
-  @media (max-width: $size-md) {
+  @media (max-width: 800px) {
     margin-inline-start: 0;
   }
-  @media (max-width: $size-sm) {
+  @media (max-width: 540px) {
     justify-self: start;
   }
 }
 .contact-info {
   grid-area: contacts;
-  @media (max-width: $size-md) {
+  @media (max-width: 800px) {
     justify-self: start;
     margin-top: 0.25rem;
   }
-  @media (max-width: $size-sm) {
+  @media (max-width: 540px) {
     flex-wrap: wrap;
   }
   > a {
@@ -238,7 +254,7 @@ header {
   line-height: 1.25rem;
   margin-top: 0.25rem;
   margin-inline-end: 1rem;
-  @media (max-width: $size-md) {
+  @media (max-width: 800px) {
     font-size: 1.25rem;
   }
 }

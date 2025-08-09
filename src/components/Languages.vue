@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .languages {
   display: flex;
   align-items: center;

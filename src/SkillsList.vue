@@ -68,7 +68,7 @@ function calculateYears(year: number) {
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .skills-list-wrapper {
   @media print {
     break-inside: avoid;

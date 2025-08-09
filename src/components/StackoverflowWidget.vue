@@ -27,7 +27,7 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .stackoverflow {
   display: grid;
   grid-template-areas: 'icon rep year' 'icon badge badge' 'tags tags tags';

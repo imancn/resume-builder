@@ -16,4 +16,4 @@ const workExperiences: WorkExperienceModel[] = WORK_EXPERIENCES;
   />
 </template>
 
-<!--<style scoped lang="scss"></style>-->
+<!--<style scoped ></style>-->

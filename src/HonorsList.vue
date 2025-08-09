@@ -17,4 +17,4 @@ import Languages from '@/components/Languages.vue';
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped></style>

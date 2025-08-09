@@ -6,9 +6,7 @@ import Resume from '@/Resume.vue';
   <Resume />
 </template>
 
-<style lang="scss">
-@import 'assets/base.scss';
-
+<style>
 #app {
   display: flex;
   padding: 1rem;
@@ -17,5 +15,4 @@ import Resume from '@/Resume.vue';
     padding: 0;
   }
 }
-
 </style>

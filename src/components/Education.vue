@@ -21,7 +21,7 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .education {
   display: grid;
   grid-template-areas: 'icon title time' 'icon company time' 'empty desc desc';

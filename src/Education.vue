@@ -7,4 +7,4 @@ import Education from '@/components/Education.vue';
   <Education />
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

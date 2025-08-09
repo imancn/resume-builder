@@ -29,16 +29,14 @@ import HonorsList from '@/HonorsList.vue';
   </div>
 </template>
 
-<style scoped lang="scss">
-@import 'assets/base.scss';
-
+<style scoped>
 .resume-wrapper {
   background: #fff;
   width: 1080px;
   margin: 0 auto;
   border-radius: 4px;
-  box-shadow: 0px 3.8px 5.3px rgba(0, 0, 0, 0.028), 0px 12.7px 17.9px rgba(0, 0, 0, 0.042),
-    0px 57px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 3.8px 5.3px rgba(0, 0, 0, 0.028),
+    0px 12.7px 17.9px rgba(0, 0, 0, 0.042), 0px 57px 80px rgba(0, 0, 0, 0.07);
   padding: 1.5rem;
   @media print {
     border-radius: 0;
@@ -60,10 +58,11 @@ import HonorsList from '@/HonorsList.vue';
   flex: 1 0 500px;
 }
 
-$aside-min-width: 285px;
 .aside {
-  flex: 1 0 min(320px, 30%);
-  min-width: $aside-min-width;
+  --max-width: 320px;
+  --min-width: 285px;
+  flex: 1 0 min(var(--max-width), 30%);
+  min-width: var(--min-width);
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -71,12 +70,10 @@ $aside-min-width: 285px;
 }
 .skills-list,
 .honors-list {
-  min-width: $aside-min-width;
-  flex: 1 1 320px;
-  //margin-bottom: 1.5rem;
+  min-width: var(--min-width);
+  flex: 1 1 var(--max-width);
 }
 .skills-list {
-  flex: 1 1 320px;
-  //margin-bottom: 1.5rem;
+  flex: 1 1 var(--max-width);
 }
 </style>

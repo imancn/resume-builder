@@ -10,7 +10,7 @@ import ReactLogo from '@/assets/react-logo.png';
   </a>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .react-contest {
   display: flex;
   align-items: center;
@@ -38,5 +38,4 @@ import ReactLogo from '@/assets/react-logo.png';
     font-size: 20px;
   }
 }
-
 </style>
