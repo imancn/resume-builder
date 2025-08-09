@@ -60,8 +60,8 @@ const yearsOfLeadershipExperience = (
   (1000 * 60 * 60 * 24 * 365.25)
 ).toFixed();
 
-const PHONE_NUMBER = import.meta.env.NETLIFY_PHONE_NUMBER;
-const EMAIL_ADDRESS = import.meta.env.NETLIFY_EMAIL_ADDRESS;
+const PHONE_NUMBER = import.meta.env.VITE_PHONE_NUMBER;
+const EMAIL_ADDRESS = import.meta.env.VITE_EMAIL_ADDRESS;
 </script>
 
 <template>
@@ -237,7 +237,11 @@ header {
 }
 
 .material-symbols-outlined {
-  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 48;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48;
 }
 
 .summary {
