@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { WorkExperienceModel, WorkPositionModel } from '@/models/experience';
-
-const props = defineProps<{
+defineProps<{
   work: WorkExperienceModel;
 }>();
 
@@ -70,8 +69,8 @@ function getMonthName(monthNumber: string) {
 
       <h3 class="job-title">
         <span class="job-position-name">{{ p.title }}</span>
-<!--        <span class="job-position-at-before-company">at</span>-->
-<!--        <span class="company-name">{{ work.company }}</span>-->
+        <!--        <span class="job-position-at-before-company">at</span>-->
+        <!--        <span class="company-name">{{ work.company }}</span>-->
       </h3>
       <div class="job-metadata">
         <b class="company-name">{{ work.company }}</b> -

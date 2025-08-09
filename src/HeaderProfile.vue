@@ -56,7 +56,8 @@ const yearsOfLeadershipExperience = (
   (1000 * 60 * 60 * 24 * 365.25)
 ).toFixed();
 
-const phoneNumber = process.env.NETLIFY_PHONE_NUMBER;
+const PHONE_NUMBER = process.env.NETLIFY_PHONE_NUMBER;
+const EMAIL_ADDRESS = process.env.NETLIFY_EMAIL_ADDRESS;
 </script>
 
 <template>
@@ -68,11 +69,11 @@ const phoneNumber = process.env.NETLIFY_PHONE_NUMBER;
     <h1 class="resume-name">Vahid Mohammadi</h1>
 
     <div class="contact-info">
-      <a href="mailto:vahidm1467@gmail.com" class="contacts-contact-info">
-        <span class="material-symbols-outlined">mail</span><span>vahidm1467@gmail.com</span>
+      <a :href="'mailto:' + EMAIL_ADDRESS" class="contacts-contact-info">
+        <span class="material-symbols-outlined">mail</span><span>{{ EMAIL_ADDRESS }}</span>
       </a>
-      <a :href="'tel:' + phoneNumber" class="contacts-contact-info">
-        <span class="material-symbols-outlined">call</span><span>+447495192782</span>
+      <a :href="'tel:' + PHONE_NUMBER" class="contacts-contact-info">
+        <span class="material-symbols-outlined">call</span><span>{{ PHONE_NUMBER }}</span>
       </a>
     </div>
 

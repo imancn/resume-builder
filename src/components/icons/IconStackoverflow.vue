@@ -1,5 +1,7 @@
 <script setup lang="ts">
-defineProps<{ isColored?: boolean }>();
+defineProps<{
+  isColored?: boolean;
+}>();
 </script>
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

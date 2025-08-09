@@ -75,10 +75,6 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
   font-weight: bold;
   color: var(--text-2);
 }
-.company-name {
-  //font-weight: bold;
-  //color: var(--text-3);
-}
 .job-type {
   color: var(--text-3);
   font-weight: normal;
