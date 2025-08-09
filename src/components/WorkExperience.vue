@@ -7,12 +7,6 @@ defineProps<{
   work: WorkExperienceModel;
 }>();
 
-// function getWholeDateRangeLength() {
-//   const endPosition = props.work.positions[0];
-//   const startPosition = props.work.positions[props.work.positions.length - 1];
-//   if (!startPosition || !endPosition) throw new Error('No positions found');
-//   return getDateRangeLengthBetweenPositions(startPosition, endPosition);
-// }
 function getPositionDateRangeLength(position: WorkPositionModel) {
   return getDateRangeLengthBetweenPositions(position, position);
 }
@@ -160,16 +154,6 @@ function getMonthName(monthNumber: string) {
 .job-metadata {
   grid-area: metadata;
   text-transform: capitalize;
-  //font-weight: bold;
-  //color: var(--text-2);
-}
-.company-name {
-  //font-weight: bold;
-  //color: var(--text-3);
-}
-.job-type {
-  //color: var(--text-3);
-  //font-weight: normal;
 }
 .position-time {
   margin-inline-start: 0.75rem;

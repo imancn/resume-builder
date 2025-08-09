@@ -4,9 +4,6 @@ import Huma from '@/assets/humaforhealth_logo.jpeg';
 import Klassroom from '@/assets/klassroom.jpeg';
 import type { WorkExperienceModel } from '@/models/experience';
 
-// When I joined Huma, the frontend team was remote and disconnected. I brought the team together, established coding standards, implemented code review processes, and automated workflows. We managed to refactor the project and proactively improved the code style making it more consistent.
-// "When I joined Huma, I unified the previously remote and disconnected frontend team by establishing cohesive coding standards, implementing robust code review processes, and automating workflows. This resulted in a successful project refactoring and proactive improvement of code style consistency.
-
 export const WORK_EXPERIENCES: WorkExperienceModel[] = [
   {
     icon: Huma,
@@ -39,7 +36,6 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         title: 'Director of Technical Operations',
         start: { month: '3', year: '2022' },
         end: { month: '9', year: '2022' },
-        // <p>After working at Tapsell for approximately 5 years, I leveraged my experience to establish and streamline processes, document tacit knowledge, develop developer handbooks, and implement a unified internal chat platform for the entire enterprise, spanning all products and teams across all Tapsell offices.</p>
         desc: `
 <ul>
 <li>Facilitated technical operations including onboarding, communication, knowledge sharing, code quality, and handover</li>
@@ -51,7 +47,6 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         title: 'Frontend Chapter Lead',
         start: { month: '7', year: '2019' },
         end: { month: '2', year: '2022' },
-        // <p>I joined Tapsell as a junior front-end developer and as the company was growing I managed to gain trust and create a front-end chapter (we were only 2 front-end developers at the time) later by growing my team I had a huge impact on the quality of work in front-end teams of Tapsell.</p>
         desc: `
 <ul>
 <li>Led the frontend chapter of 20+ Angular, React, and Vue web developers in more than 5 products working as agile teams</li>
@@ -60,13 +55,11 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
 <li>Spearheaded the development of a full-featured Angular library for internal design system including an SSO platform</li>
 </ul>
 `,
-        // <p>Our front-end developers were working in separate teams without any interactions. By conducting weekly knowledge-sharing meetings and cross-team code review sessions, I was able to create a connected and targeted team. Besides, by creating a shared mono-repo library not only did we skip a lot of repeated work, but also we had more interactions as we were all working on the same project.</p
       },
       {
         title: 'Senior Frontend Engineer',
         start: { month: '10', year: '2017' },
         end: { month: '12', year: '2019' },
-        // <p>I worked in 3 different teams, designed UIs, implemented front-end projects from scratch, and hired developers</p>
         desc: `
 <ul>
 <li>Designed the UI and implemented 6 analytical Angular and React data visualisation panels</li>
@@ -90,10 +83,6 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         desc: `
         <p>A small team of friends working on two Flutter mobile games:</p>
 `,
-        // <ul>
-        // <li>Mastermind Pro: a game based on the classic Mastermind</li>
-        // <li>Abalone: an Abalone game for Android and iOS</li>
-        // </ul>
       },
     ],
   },

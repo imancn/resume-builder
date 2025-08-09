@@ -4,13 +4,17 @@ import IconStackoverflow from '@/components/icons/IconStackoverflow.vue';
 
 const skills: Skill[] = [
   { name: 'HTML CSS', since: 2014, topPercentileInStackoverflow: 10 },
-  { name: 'JavaScript TypeScript', since: 2016, topPercentileInStackoverflow: 10 },
+  {
+    name: 'JavaScript TypeScript',
+    since: 2016,
+    topPercentileInStackoverflow: 10,
+  },
   {
     name: 'Angular',
     since: 2017,
     topPercentileInStackoverflow: 5,
-    // badge: 'bronze',
-    badgeLink: 'https://stackoverflow.com/help/badges/6902/angular?userid=1889607',
+    badgeLink:
+      'https://stackoverflow.com/help/badges/6902/angular?userid=1889607',
   },
   { name: 'React', since: 2019 },
 ];
@@ -46,16 +50,23 @@ function calculateYears(year: number) {
     <ul class="skills-list">
       <li v-for="s of skills" :key="s.name" class="skill">
         <div class="skill-name">{{ s.name }}</div>
-        <a v-if="s.badge" :class="'badge badge-' + s.badge" :href="s.badgeLink" target="_blank">{{
-          s.badge
-        }}</a>
+        <a
+          v-if="s.badge"
+          :class="'badge badge-' + s.badge"
+          :href="s.badgeLink"
+          target="_blank"
+          >{{ s.badge }}</a
+        >
         <div
           v-if="s.topPercentileInStackoverflow"
           class="top-percentile"
           :title="`Top ${s.topPercentileInStackoverflow}% in StackOverFlow`"
         >
-          Top <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
-          <span class="stackoverflow-icon"><IconStackoverflow :is-colored="true" /></span>
+          Top
+          <span class="percentile">{{ s.topPercentileInStackoverflow }}%</span>
+          <span class="stackoverflow-icon"
+            ><IconStackoverflow :is-colored="true"
+          /></span>
         </div>
         <div class="skill-years">{{ calculateYears(s.since) }}+ Years</div>
       </li>
@@ -94,7 +105,6 @@ function calculateYears(year: number) {
 }
 .top-percentile {
   margin-inline-start: 0.75rem;
-  //margin-inline-start: auto;
   color: var(--text-3);
   opacity: 0.5;
 
