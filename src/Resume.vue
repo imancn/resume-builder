@@ -35,8 +35,10 @@ import HonorsList from '@/HonorsList.vue';
   width: 1080px;
   margin: 0 auto;
   border-radius: 4px;
-  box-shadow: 0px 3.8px 5.3px rgba(0, 0, 0, 0.028),
-    0px 12.7px 17.9px rgba(0, 0, 0, 0.042), 0px 57px 80px rgba(0, 0, 0, 0.07);
+  box-shadow:
+    0 3.8px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.7px 17.9px rgba(0, 0, 0, 0.042),
+    0 57px 80px rgba(0, 0, 0, 0.07);
   padding: 1.5rem;
   @media print {
     border-radius: 0;

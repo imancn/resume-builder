@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import type { WorkExperienceModel, WorkPositionModel } from '@/models/experience';
+import type {
+  WorkExperienceModel,
+  WorkPositionModel,
+} from '@/models/experience';
 defineProps<{
   work: WorkExperienceModel;
 }>();
@@ -26,17 +29,21 @@ function getDateRangeLengthBetweenPositions(
   const startMonth = parseInt(startPositionStart.month, 10);
   const nowDate = new Date();
 
-  const years: number = endYear ? endYear - startYear : nowDate.getFullYear() - startYear;
-  const months = endMonth ? endMonth - startMonth : nowDate.getMonth() + 1 - startMonth;
+  const years: number = endYear
+    ? endYear - startYear
+    : nowDate.getFullYear() - startYear;
+  const months = endMonth
+    ? endMonth - startMonth
+    : nowDate.getMonth() + 1 - startMonth;
   const totalMonths = years * 12 + months;
 
   return totalMonths <= 1
     ? '1 month'
     : totalMonths < 12
-    ? `${totalMonths} months`
-    : totalMonths % 12 === 0
-    ? `${totalMonths / 12}+ years`
-    : `${Math.floor(totalMonths / 12)}${totalMonths % 12 >= 6 ? '.5' : ''}+ years`;
+      ? `${totalMonths} months`
+      : totalMonths % 12 === 0
+        ? `${totalMonths / 12}+ years`
+        : `${Math.floor(totalMonths / 12)}${totalMonths % 12 >= 6 ? '.5' : ''}+ years`;
 }
 function getMonthName(monthNumber: string) {
   const monthNames = [
@@ -59,7 +66,11 @@ function getMonthName(monthNumber: string) {
 
 <template>
   <div class="company-work-exp">
-    <div class="work-experience" v-for="(p, i) in work.positions" v-bind:key="p.title">
+    <div
+      class="work-experience"
+      v-for="(p, i) in work.positions"
+      v-bind:key="p.title"
+    >
       <div v-if="i === 0" class="company-icon">
         <img :src="work.icon" :alt="work.company" width="40" height="40" />
       </div>
@@ -69,8 +80,6 @@ function getMonthName(monthNumber: string) {
 
       <h3 class="job-title">
         <span class="job-position-name">{{ p.title }}</span>
-        <!--        <span class="job-position-at-before-company">at</span>-->
-        <!--        <span class="company-name">{{ work.company }}</span>-->
       </h3>
       <div class="job-metadata">
         <b class="company-name">{{ work.company }}</b> -
@@ -103,7 +112,7 @@ function getMonthName(monthNumber: string) {
   grid-template-columns: 3.5rem 1fr auto;
   margin-bottom: 0.75rem;
   @media print {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
   &:last-child {
     @media not print {
@@ -135,7 +144,9 @@ function getMonthName(monthNumber: string) {
   background: #ddd;
   border-radius: 10px;
   display: inline-block;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ddd;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 3px #ddd;
 }
 .time {
   grid-area: time;
@@ -169,11 +180,6 @@ function getMonthName(monthNumber: string) {
 .job-title {
   grid-area: title;
   line-height: 22px;
-}
-.job-position-at-before-company {
-  font-weight: normal;
-  margin: 0 6px;
-  font-size: 85%;
 }
 .work-experience {
   &:not(:last-child) {

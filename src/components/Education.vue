@@ -11,7 +11,9 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
 
       <h3 class="title">University of Tehran</h3>
       <div class="job-metadata">
-        <span class="company-name">Bachelor's degree, Computer Software Engineering</span>
+        <span class="company-name"
+          >Bachelor's degree, Computer Software Engineering</span
+        >
       </div>
 
       <div class="time">
@@ -47,19 +49,6 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
     max-width: 100%;
   }
 }
-.nested-position-company-placeholder {
-  grid-area: icon;
-  place-self: center;
-  margin-inline-end: 0.75rem;
-}
-.nested-position-bullet {
-  aspect-ratio: 1/1;
-  width: 10px;
-  background: #ddd;
-  border-radius: 10px;
-  display: inline-block;
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ddd;
-}
 .time {
   grid-area: time;
   display: flex;
@@ -74,19 +63,5 @@ import UtLogo from '@/assets/university-of-tehran.jpeg';
   text-transform: capitalize;
   font-weight: bold;
   color: var(--text-2);
-}
-.job-type {
-  color: var(--text-3);
-  font-weight: normal;
-}
-.position-time {
-  margin-inline-start: 0.75rem;
-  font-weight: normal;
-  font-style: italic;
-  color: var(--text-3);
-}
-.job-title {
-  grid-area: title;
-  line-height: 22px;
 }
 </style>
