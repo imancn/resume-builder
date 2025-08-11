@@ -32,6 +32,9 @@ const otherSkills: string[] = [
   'CDC', 
   'Sink',
   'JMeter',
+  /// Monitoring tools
+  'Grafana',
+  'Prometheus',
   /// Data Serialization - Protocols
   'JWT',
   'HTTP',
