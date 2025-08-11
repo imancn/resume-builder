@@ -18,7 +18,8 @@ export const WORK_EXPERIENCES: WorkExperienceModel[] = [
         start: { month: '5', year: '2025' },
         desc: `
 <ul>
-<li>Built and open-sourced production Data Warehouse Stack using ClickHouse, Apache Kafka Connect (CDC, Sink), Apache Flink SQL, to enabling unified real-time analytics across SOA microservices.
+<li>Built a central read-only PostgreSQL via logical replication for real-time Metabase visualization without external tools.
+<li>Built production Data Warehouse Stack for real-time CDC from PostgreSQL to ClickHouse, enabling unified analytics.
 </ul>`,
       },
     ],
